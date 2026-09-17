@@ -15,16 +15,14 @@ seo:
 
 {% assign instructors = site.staffers | where: 'role', 'Instructor' %} {% for staffer in instructors %} {{ staffer}} {% endfor %}
 
-{{ course_vars.quarter }}
-{: .md-badge-purple }
+{{ site.course_vars.quarter }}
+{: .label .label-purple }
 
-{{ course_vars.building }}
-{: .md-badge-purple }
+{{ site.course_vars.building }}
+{: .label .label-purple }
 
-{{ course_vars.timings }}
-{: .md-badge-purple }
-
-{% include staffer.html staff=staff nobio='true' %}
+{{ site.course_vars.timings }}
+{: .label .label-purple }
 
 {: .important }
 If you are joining the course late, please ...! Please also note that I have **no control over the waitlist**. Please email [cogsadvising@ucsd.edu](mailto:cogsadvising@ucsd.edu) or drop in their office hours (your best bet)!

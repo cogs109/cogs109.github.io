@@ -48,6 +48,12 @@ aux_links:
     - 'https://podcast.ucsd.edu/watch/fa26/cogs109_b00'
 footer_content:
 
+# Course info shown as badges on the home page
+course_vars:
+  quarter: 'Fall 2026'
+  building: 'CENTR 113'
+  timings: 'MWF 9:00-9:50am'
+
 # Collections for website data
 collections:
   staffers:
