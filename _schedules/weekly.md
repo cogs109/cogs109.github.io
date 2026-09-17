@@ -32,26 +32,26 @@ schedule:
       - name: Lecture
         start: 9:00 AM
         end: 9:50 AM
-      - name: Section
+      - name: 1-1 Booked Office Hours
         start: 2:00 PM
-        end: 2:50 PM
+        end: 3:15 PM
       - name: Office Hours
-        start: 3:00 PM
-        end: 4:00 PM
+        start: 3:15 PM
+        end: 4:30 PM
   - name: Thursday
-    events:
-      - name: Office Hours
-        start: 4:30 PM
-        end: 5:30 PM
   - name: Friday
     events:
       - name: Lecture
         start: 9:00 AM
         end: 9:50 AM
       - name: Section
+        start: 3:00 PM
+        end: 3:50 PM
+      - name: Section
         start: 4:00 PM
         end: 4:50 PM
       - name: Section
         start: 5:00 PM
         end: 5:50 PM
+     
 ---
