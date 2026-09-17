@@ -11,15 +11,15 @@
 : 📖 Readings: [ISLP Ch. 2.1–2.3](https://www.statlearning.com/) — Lab: Ch 2.3
 
 **Sep 28 (M)**
-: **LEC 1**{: .label .label-grey} [**What is statistical learning? Prediction vs. inference**](#)
+: **LEC 1**{: .label .label-grey} [**What is statistical learning? Prediction vs. inference**]
 : **Pre-course survey**{: .label .label-red} due 11:59pm
 : **Syllabus quiz**{: .label .label-red} due 11:59pm
 
 **Sep 30 (W)**
-: **LEC 2**{: .label .label-grey} [**Assessing model accuracy; the bias-variance trade-off**](#)
+: **LEC 2**{: .label .label-grey} [**Assessing model accuracy; the bias-variance trade-off**]
 
 **Oct 2 (F)**
-: **LEC 3**{: .label .label-grey} [**Question-driven exploratory data analysis**](#)
+: **LEC 3**{: .label .label-grey} [**Question-driven exploratory data analysis**]
 : **DISC**{: .label .label-green} Meet your TAs & each other; establishing expectations for section
 
 
