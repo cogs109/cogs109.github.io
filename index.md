@@ -25,6 +25,7 @@ seo:
 {{ site.course_vars.timings }}
 {: .label .label-blue }
 
+
 {%- comment -%}
   Important info & reminders. Edit _data/notices.yml to change what appears here.
 {%- endcomment -%}
