@@ -14,7 +14,7 @@ seo:
 {: .fs-6 .fw-300 }
 
 {% assign instructors = site.staffers | where: 'role', 'Instructor' %}
-{% for staffer in instructors %}{% include staffer.html staffer=staffer nobio=true %}{% endfor %}
+{% for staffer in instructors %}{% include staffer.html staffer=staffer nobio='true' %}{% endfor %}
 
 {{ site.course_vars.quarter }}
 {: .label .label-blue }

@@ -1,12 +1,17 @@
 {%- comment -%}
   Renders one staff member's card.
 
-    {% include staffer.html staffer=<document> %}              name, email + bio
-    {% include staffer.html staffer=<document> nobio=true %}   name + email only
-    {% include staffer.html staffer=<document> bio=content %}  bio passed in
+  Parameters:
+    staffer  a staffer document (required)
+    nobio    pass 'true' to show only the photo, name and email
+    bio      the rendered bio to show when nobio is not set
 
   Used by _layouts/staffer.html (full card, on the Staff page) and by index.md
   (nobio, so the home page shows the instructor without the bio text).
+
+  NOTE: do not write include tags in this comment. Liquid parses tags inside
+  comment blocks, so an example include is treated as a real one and fails the
+  build with "Invalid syntax for include tag".
 {%- endcomment -%}
 {%- assign s = include.staffer -%}
 <div class="staffer">
