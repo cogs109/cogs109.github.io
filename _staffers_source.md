@@ -37,7 +37,7 @@ Hello there! My name is Jiesen but you may also call me Jason. I'm a 1st year [M
 ## zhicheng
 ---
 name: Zhicheng Huang
-role: TA
+role: Teaching Assistant
 email: zhh082@ucsd.edu
 photo: zhicheng.png
 ---
@@ -45,7 +45,7 @@ photo: zhicheng.png
 ## tanvi
 ---
 name: Tanvi Vidyala
-role: TA
+role: Teaching Assistant
 email: tvidyala@ucsd.edu
 photo: ptanvi.png
 ---
