@@ -4,6 +4,6 @@ title: 📖 Syllabus
 nav_order: 2
 description: The course syllabus
 ---
-You can find the course syllabus [here](https://docs.google.com/document/d/1SdpRRqtwHRpUCxthoSMRfS8kZEPTlqgsQaZ8pjTMwKE/edit?usp=sharing) or below.
+You can find the course syllabus [here](https://docs.google.com/document/d/1liuU_F9YXLCRPqDEK0MhoK4tcLLjc3X3G_wG7-V2gFQ/edit?usp=sharing) or below.
 
-<iframe src="https://docs.google.com/document/d/e/2PACX-1vQQxlZjEPXYWN6JJ4iWir0ruacM5FslasEzU2k4Ym66EQu130ypqcQ86KMqSIfyKm9WnOv4VHHxkzOE/pub?embedded=true" width="800" height="1300" allow="autoplay"></iframe>
+<iframe src="https://docs.google.com/document/d/e/2PACX-1vTG3gqc-BIGxn--X5gxKCNUgbvq03lKYOdJHAJqhB1J9VoaOWEYWYoV_aGRUIuVAssJlZ47ox3VME4r/pub?embedded=true" width="800" height="1300" allow="autoplay"></iframe>
