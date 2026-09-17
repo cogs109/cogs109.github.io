@@ -7,3 +7,4 @@ vendor/
 
 # generated at build time from _modules_source.md by _plugins/split_modules.rb
 _modules/week-*.md
+_staffers/*.md

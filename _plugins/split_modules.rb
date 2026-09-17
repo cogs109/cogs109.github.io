@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "fileutils"
 
 # Regenerates _modules/week-XX.md from a single master file (_modules_source.md)
@@ -14,7 +16,7 @@ Jekyll::Hooks.register :site, :after_reset do |site|
   # don't linger on disk.
   Dir.glob(File.join(modules_dir, "week-*.md")).each { |f| File.delete(f) }
 
-  content = File.read(source_path)
+  content = File.read(source_path, :encoding => "UTF-8")
 
   # Split on marker lines like: ## week-00: Week 0
   parts = content.split(/^## (week-[\w-]+):[ \t]*(.*)$/)
@@ -22,7 +24,7 @@ Jekyll::Hooks.register :site, :after_reset do |site|
 
   parts.each_slice(3) do |slug, title, body|
     file_path = File.join(modules_dir, "#{slug}.md")
-    File.open(file_path, "w") do |f|
+    File.open(file_path, "w:UTF-8") do |f|
       f.write("---\n")
       f.write("title: #{title.to_s.strip.inspect}\n")
       f.write("---\n\n")

@@ -7,19 +7,21 @@ description: A listing of all the course staff members.
 
 # Course Staff
 
-## Instructors
+{% comment %}
+  Everyone on this page is generated from _staffers_source.md at build time by
+  _plugins/split_staffers.rb. To add, remove or edit a person, edit that file.
+{% endcomment %}
 
-{% assign instructors = site.staffers | where: 'role', 'Instructor' %}
-{% for staffer in instructors %}
+{% assign role_names = 'Instructor,Teaching Assistant,PLA,Reader' | split: ',' %}
+{% assign role_headings = 'Instructor,Teaching Assistant,Peer Learning Assistants,Reader' | split: ',' %}
+
+{% for role in role_names %}
+  {% assign group = site.staffers | where: 'role', role %}
+  {% if group.size > 0 %}
+## {{ role_headings[forloop.index0] }}
+
+{% for staffer in group %}
 {{ staffer }}
 {% endfor %}
-
-{% assign teaching_assistants = site.staffers | where: 'role', 'Teaching Assistant' %}
-{% assign num_teaching_assistants = teaching_assistants | size %}
-{% if num_teaching_assistants != 0 %}
-## Teaching Assistant
-
-{% for staffer in teaching_assistants %}
-{{ staffer }}
+  {% endif %}
 {% endfor %}
-{% endif %}
