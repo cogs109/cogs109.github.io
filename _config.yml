@@ -51,7 +51,7 @@ footer_content:
 # Course info shown as badges on the home page
 course_vars:
   quarter: 'Fall 2026'
-  building: 'CENTR 113'
+  building: 'COA 130'
   timings: 'MWF 9:00-9:50am'
 
 # Collections for website data
