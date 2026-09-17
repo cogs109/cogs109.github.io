@@ -1,0 +1,245 @@
+# ─────────────────────────────────────────────────────────────────────────────
+#  COURSE CALENDAR — one entry per week, rendered on the home page.
+#
+#  Edit this file and push; the calendar rebuilds itself. Nothing else to touch.
+#
+#  Each week:
+#    week     the week number shown in the second column
+#    month    only on the first week of a new month; draws the coloured band
+#    topic    the "Topic / ISLP Reading" cell (markdown, use | for line breaks)
+#    mon / wed / fri
+#      date     e.g. "Sept 28"
+#      lec      e.g. "Lec 1"  (omit for exams, holidays, etc.)
+#      title    what the class covers
+#      event    big red text instead of a lecture, e.g. "EXAM 1"
+#      note     small red italic line, e.g. drop deadlines
+#      due      list of assignment names; each becomes a submission link.
+#               The link is looked up in `submit:` in _config.yml by the first
+#               word of the name ("Quiz 1" -> submit.Quiz), so adding
+#               "Quiz 9" here needs no other change.
+#      section  (fri only) what happens in discussion section
+# ─────────────────────────────────────────────────────────────────────────────
+
+- week: 0
+  month: Sept
+  topic: Ch 1
+  fri:
+    date: Sept 25
+    title: Course intro
+    section: No section this week
+
+- week: 1
+  topic: |
+    **Intro**
+    Ch 2.1–2.2
+    _Lab: Ch 2.3_
+  mon:
+    date: Sept 28
+    lec: Lec 1
+    title: What is statistical learning? Prediction vs. inference
+    due: [Pre-course survey, Syllabus quiz]
+  wed:
+    date: Sept 30
+    lec: Lec 2
+    title: "Assessing model accuracy: the bias-variance trade-off"
+  fri:
+    date: Oct 2
+    lec: Lec 3
+    title: Question-driven exploratory data analysis
+    section: Meet your TAs & each other, establishing expectations for section
+
+- week: 2
+  month: Oct
+  topic: |
+    **Regression**
+    Ch 3.1–3.2
+    _Lab: Ch 3.6_
+  mon:
+    date: Oct 5
+    lec: Lec 4
+    title: Simple linear regression
+    due: [Quiz 1, Homework 1]
+  wed:
+    date: Oct 7
+    lec: Lec 5
+    title: Multiple linear regression
+  fri:
+    date: Oct 9
+    lec: Lec 6
+    title: Qualitative variables in regression
+    section: Section
+
+- week: 3
+  topic: |
+    **Regression (cont'd)**
+    Ch 3.3, Ch 7.1–7.3, Ch 10.1
+    _Lab: Ch 3.6_
+  mon:
+    date: Oct 12
+    lec: Lec 7
+    title: Non-linear features in regression (interactions, polynomial, log)
+    due: [Quiz 2, Homework 2]
+  wed:
+    date: Oct 14
+    lec: Lec 8
+    title: Diagnosing problems in linear regression
+  fri:
+    date: Oct 16
+    lec: Lec 9
+    title: Regression neural networks
+    section: Exam review
+
+- week: 4
+  topic: |
+    **Exam 1 & Classification**
+    Ch 4.1–4.3.4
+    _Lab: Ch 4.7.1–4.7.2_
+  mon:
+    date: Oct 19
+    event: EXAM 1
+    due: [Quiz 3, Homework 3]
+  wed:
+    date: Oct 21
+    lec: Lec 10
+    title: Simple logistic regression
+  fri:
+    date: Oct 23
+    lec: Lec 11
+    title: Multiple logistic regression
+    note: Last day to drop without a "W"
+    section: Section
+
+- week: 5
+  topic: |
+    **Classification (cont'd)**
+    Ch 4.3.5, Ch 10.1
+    **Resampling**
+    Ch 5.1–5.2
+    _Lab: Ch 5.3_
+  mon:
+    date: Oct 26
+    lec: Lec 12
+    title: Multinomial logistic regression & classification neural networks
+    due: [Quiz 4, Homework 4, Project Checkpoint 1]
+  wed:
+    date: Oct 28
+    lec: Lec 13
+    title: Cross-validation
+  fri:
+    date: Oct 30
+    lec: Lec 14
+    title: Bootstrap methods
+    section: Section
+
+- week: 6
+  month: Nov
+  topic: |
+    **Model selection**
+    Ch 6.1–6.2
+    _Lab: Ch 6.5.1–6.5.2_
+  mon:
+    date: Nov 2
+    lec: Lec 15
+    title: Model selection
+    due: [Quiz 5, Homework 5]
+  wed:
+    date: Nov 4
+    lec: Lec 16
+    title: Regularization
+  fri:
+    date: Nov 6
+    lec: Lec 17
+    title: Predictive modeling workflow
+    note: Last day to drop with a "W"
+    section: Section
+
+- week: 7
+  topic: |
+    **Exam 2 & Break**
+  mon:
+    date: Nov 9
+    event: EXAM 2
+    due: [Quiz 6, Homework 6]
+  wed:
+    date: Nov 11
+    event: "NO CLASS"
+    note: Veterans Day holiday
+  fri:
+    date: Nov 13
+    event: "NO CLASS"
+    note: Prof. Lai giving talks in NYC
+    section: Section
+
+- week: 8
+  topic: |
+    **Tree Methods**
+    Ch 8.1–8.2
+    _Lab: Ch 8.3_
+  mon:
+    date: Nov 16
+    lec: Lec 18
+    title: Decision trees
+    due: [Project Checkpoint 2]
+  wed:
+    date: Nov 18
+    lec: Lec 19
+    title: Bagging, random forests, boosting
+  fri:
+    date: Nov 20
+    lec: Lec 20
+    title: Modern tree methods (XGBoost, LightGBM, CatBoost)
+    section: Section
+
+- week: 9
+  topic: |
+    **Unsupervised Learning**
+    Ch 12.1–12.2
+    _Lab: Ch 12.5.1_
+  mon:
+    date: Nov 23
+    lec: Lec 21
+    title: Principal components analysis (PCA)
+    due: [Quiz 7, Homework 7]
+  wed:
+    date: Nov 25
+    lec: Lec 22
+    title: PCA (cont'd)
+  fri:
+    date: Nov 27
+    event: "NO CLASS / SECTION"
+    note: Thanksgiving holiday
+
+- week: 10
+  month: Dec
+  topic: |
+    **Unsupervised Learning (cont'd)**
+    Ch 12.4, Ch 12.5.3–12.5.4
+    **Exam 3 & Final Project Expo**
+  mon:
+    date: Nov 30
+    lec: Lec 23
+    title: K-means & hierarchical clustering — _virtual lecture_
+    due: [Quiz 8, Homework 8]
+  wed:
+    date: Dec 2
+    event: EXAM 3
+  fri:
+    date: Dec 4
+    event: COURSE PROJECT EXPO
+    title: "& course conclusion"
+    due: [Project Checkpoint 3]
+    note: Dec 5–7 · Project oral exams
+    section: No section
+
+- week: 11
+  topic: |
+    **Finals week**
+  mon:
+    date: Dec 7
+  wed:
+    date: Dec 9
+    event: ELECTIVE FINAL EXAM
+    title: 9–10:30am @ COA 130
+    note: For those who did not complete the course project
+  fri:
+    date: Dec 11

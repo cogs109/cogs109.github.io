@@ -5,8 +5,6 @@ nav_exclude: true
 description: Listing of course modules and topics.
 ---
 
-# Calendar
+# Course Calendar
 
-{% for module in site.modules %}
-{{ module }}
-{% endfor %}
+{% include calendar.html %}

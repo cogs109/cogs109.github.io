@@ -1,0 +1,80 @@
+{%- comment -%}
+  Course calendar: one row per week. Data lives in _data/calendar.yml.
+
+  The month band on the left is drawn by carrying the last `month:` value
+  forward, so only the first week of each month needs to set it.
+{%- endcomment -%}
+<div class="cal">
+  <div class="cal-scroll">
+    <table class="cal-table">
+      <thead>
+        <tr>
+          <th scope="col" class="cal-band-head"><span aria-hidden="true">🗓️</span></th>
+          <th scope="col" class="cal-week-head">Week</th>
+          <th scope="col" class="cal-topic-head">Topic / ISLP Reading</th>
+          <th scope="col">Mon <span class="cal-kind cal-kind-lec">Lecture</span></th>
+          <th scope="col">Wed <span class="cal-kind cal-kind-lec">Lecture</span></th>
+          <th scope="col">Fri <span class="cal-kind cal-kind-lec">Lecture</span> &amp; <span class="cal-kind cal-kind-sec">Section</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        {%- assign month = '' -%}
+        {%- for week in site.data.calendar -%}
+          {%- if week.month and week.month != '' -%}
+            {%- assign month = week.month -%}
+            {%- assign new_band = true -%}
+          {%- else -%}
+            {%- assign new_band = false -%}
+          {%- endif -%}
+        <tr class="cal-row">
+          <th scope="row" class="cal-band cal-band-{{ month | downcase }}">
+            {%- if new_band %}<span class="cal-band-label">{{ month }}</span>{% endif -%}
+          </th>
+          <td class="cal-week">{{ week.week }}</td>
+          <td class="cal-topic">{{ week.topic | markdownify }}</td>
+
+          {%- assign days = 'mon,wed,fri' | split: ',' -%}
+          {%- for key in days -%}
+            {%- assign day = week[key] -%}
+          <td class="cal-day">
+            {%- if day -%}
+            <div class="cal-slot">
+              <div class="cal-datehead">
+                <span class="cal-date{% if day.event %} cal-date-event{% endif %}">{{ day.date }}</span>
+                {%- if day.lec %}<span class="cal-lec">{{ day.lec }}</span>{% endif -%}
+              </div>
+              {%- if day.event %}
+              <p class="cal-event">{{ day.event }}</p>
+              {%- endif %}
+              {%- if day.title %}
+              <p class="cal-title">{{ day.title | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+              {%- endif %}
+              {%- if day.note %}
+              <p class="cal-note">{{ day.note | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+              {%- endif %}
+              {%- if day.due %}
+              <ul class="cal-dues">
+                {%- for name in day.due -%}
+                  {%- assign key2 = name | split: ' ' | first -%}
+                  {%- assign url = site.submit[key2] | default: site.submit.default -%}
+                <li><a class="cal-due" href="{{ url }}">{{ name }}</a></li>
+                {%- endfor -%}
+              </ul>
+              {%- endif %}
+            </div>
+            {%- endif -%}
+            {%- if key == 'fri' and day.section %}
+            <div class="cal-slot cal-sectionslot">
+              <span class="cal-sectionlabel">Section</span>
+              <p class="cal-title">{{ day.section }}</p>
+            </div>
+            {%- endif -%}
+          </td>
+          {%- endfor -%}
+        </tr>
+        {%- endfor -%}
+      </tbody>
+    </table>
+  </div>
+  <p class="cal-foot">All assignments are due by <strong>11:59pm PT</strong>. Assignment names link to where you submit them.</p>
+</div>

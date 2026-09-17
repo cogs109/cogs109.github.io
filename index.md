@@ -39,7 +39,9 @@ seo:
   * Date, Time @ <a href="https://maps.app.goo.gl/cb1DK2ASsVHa4G3j6" target="_blank" rel="noopener">CSB Courtyard &#x2197;</a>  (in-person only!) with XX
   * Date, Time @ <a href="https://ucsd.zoom.us/" target="_blank" rel="noopener">Zoom &#x2197;</a> with XX
 
-## Course Schedule
-{% for module in site.modules %}
-{{ module }}
-{% endfor %}
+## Course Calendar
+
+{%- comment -%}
+  One row per week. Edit _data/calendar.yml to change anything here.
+{%- endcomment -%}
+{% include calendar.html %}
