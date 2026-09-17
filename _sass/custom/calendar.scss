@@ -28,7 +28,7 @@ table.cal-table {
   border-collapse: collapse;
   display: table;
   margin: 0;
-  min-width: 1020px;
+  min-width: 1040px;
   table-layout: fixed;
   width: 100%;
 
@@ -41,7 +41,7 @@ table.cal-table {
   }
 
   thead th {
-    @extend .fs-3;
+    @extend .fs-4;
     border-bottom: 2px solid $cal-rule;
     color: $cal-ink;
     font-weight: 600;
@@ -49,8 +49,8 @@ table.cal-table {
     vertical-align: middle;
   }
 
-  .cal-band-head { width: 34px; }
-  .cal-week-head { width: 48px; }
+  .cal-band-head { width: 38px; }
+  .cal-week-head { width: 66px; }
   .cal-topic-head { width: 15%; }
 }
 
@@ -74,7 +74,7 @@ table.cal-table {
 }
 
 .cal-band-label {
-  @extend .fs-2;
+  @extend .fs-4;
   color: $cal-ink;
   font-weight: 600;
   writing-mode: vertical-rl;
