@@ -1,34 +1,65 @@
-{% assign start_time = page.timeline | first %}
-{% capture offset %}{% include minutes.liquid time=start_time %}{% endcapture %}
-<div class="schedule">
-  <ul class="schedule-timeline" style="min-width: {{ page.schedule | size | times: 130 }}px">
-    {% for time in page.timeline %}
-    <li class="schedule-time">{{ time }} </li>
-    {% endfor %}
-  </ul>
-  <ul class="schedule-group">
-    {% for day in page.schedule %}
-    <li class="schedule-day">
-      <h2 class="schedule-header">{{ day.name }}</h2>
-      {% if day.events %}
-      <ul class="schedule-events" style="height: {{ page.timeline | size | times: 40 }}px">
-      {% for event in day.events %}
-        {% capture start %}{% include minutes.liquid time=event.start %}{% endcapture %}
-        {% capture end %}{% include minutes.liquid time=event.end %}{% endcapture %}
-        {% assign top = start | minus: offset | times: 40 | divided_by: 30 %}
-        {% assign height = end | minus: start | times: 40 | divided_by: 30 %}
-        <li class="schedule-event {% if event.class %}{{ event.class }}{% else %}{{ event.name | slugify }}{% endif %}"
-            style="top: {{ top }}px; height: {{ height }}px;">
-          <div class="name">{{ event.name }}</div>
-          <div class="time">{{ event.start }}–{{ event.end }}</div>
-          {% if event.location %}
-          <div class="location">{{ event.location }}</div>
-          {% endif %}
-        </li>
-      {% endfor %}
-      </ul>
-      {% endif %}
-    </li>
-    {% endfor %}
-  </ul>
+{%- comment -%}
+  Renders the "Weekly Rhythm" table from a _schedules/*.md front matter block.
+  See the comments in _schedules/weekly.md for the data shape.
+
+  A cell may set `span: N` to stretch across N day columns; the loop then skips
+  the next N-1 days so the row keeps the right number of <td>s.
+{%- endcomment -%}
+<div class="rhythm">
+  <div class="rhythm-head">
+    <div>
+      <h2 class="rhythm-title">{{ page.heading }}</h2>
+      {% if page.subtitle %}<p class="rhythm-subtitle">{{ page.subtitle }}</p>{% endif %}
+    </div>
+    <div class="rhythm-meta">
+      {% if page.term %}<span class="rhythm-term">{{ page.term }}</span>{% endif %}
+      {% if page.instructor %}<span>Instructor: <strong>{{ page.instructor }}</strong></span>{% endif %}
+    </div>
+  </div>
+
+  <div class="rhythm-scroll">
+    <table class="rhythm-table">
+      <thead>
+        <tr>
+          <th scope="col" class="rhythm-corner">Component</th>
+          {% for day in page.days %}
+          <th scope="col">{{ day }}</th>
+          {% endfor %}
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in page.rhythm %}
+        <tr>
+          <th scope="row" class="rhythm-component">
+            {% if row.component != '' %}
+            <span class="rhythm-component-name">{{ row.component }}</span>
+            {% if row.note %}<span class="rhythm-component-note">{{ row.note }}</span>{% endif %}
+            {% endif %}
+          </th>
+
+          {% assign skip = 0 %}
+          {% for day in page.days %}
+            {% if skip > 0 %}
+              {% assign skip = skip | minus: 1 %}
+              {% continue %}
+            {% endif %}
+            {% assign cell = row.cells[day] %}
+            {% if cell %}
+              {% assign span = cell.span | default: 1 %}
+              {% assign skip = span | minus: 1 %}
+          <td colspan="{{ span }}">
+            <div class="rhythm-cell rhythm-{{ cell.kind | default: 'work' }}">
+              <span class="rhythm-cell-text">{{ cell.text }}</span>
+              {% if cell.note %}<span class="rhythm-cell-note">{{ cell.note }}</span>{% endif %}
+            </div>
+          </td>
+            {% else %}
+          <td></td>
+            {% endif %}
+          {% endfor %}
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
 </div>
