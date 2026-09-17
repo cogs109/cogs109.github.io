@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 📅 Schedule
+title: 📅 Weekly Rhythm
 nav_order: 3
 description: The weekly event schedule.
 ---
