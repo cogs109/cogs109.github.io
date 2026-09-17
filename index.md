@@ -26,9 +26,8 @@ seo:
 {: .label .label-blue }
 
 
-{%- comment -%}
-  Important info & reminders. Edit _data/notices.yml to change what appears here.
-{%- endcomment -%}
+{% comment %} Important info & reminders: edit _data/notices.yml {% endcomment %}
+
 {% include notices.html %}
 
 ## Office Hours
@@ -42,7 +41,6 @@ seo:
 
 ## Course Calendar
 
-{%- comment -%}
-  One row per week. Edit _data/calendar.yml to change anything here.
-{%- endcomment -%}
+{% comment %} One row per week: edit _data/calendar.yml {% endcomment %}
+
 {% include calendar.html %}
