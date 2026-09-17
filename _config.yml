@@ -54,6 +54,27 @@ course_vars:
   building: 'COA 130'
   timings: 'MWF 9:00-9:50am'
 
+# Callout styles (.important, .note, ...) used by _includes/notices.html and by
+# `{: .important }` in page markdown. The theme defines these in its own
+# _config.yml, but Jekyll does not merge a remote theme's config, so without
+# this block every callout renders as an unstyled paragraph.
+callouts_level: quiet # or loud
+callouts:
+  highlight:
+    color: yellow
+  important:
+    title: Important
+    color: blue
+  new:
+    title: New
+    color: green
+  note:
+    title: Note
+    color: purple
+  warning:
+    title: Warning
+    color: red
+
 # Collections for website data
 collections:
   staffers:

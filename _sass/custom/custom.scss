@@ -126,3 +126,22 @@ summary {
   }
 }
 
+// Important info & reminders on the home page (_includes/notices.html).
+// The callout colours themselves come from the `callouts` block in _config.yml.
+.notices {
+  margin: $sp-4 0;
+
+  blockquote {
+    margin: 0 0 $sp-3;
+
+    > p:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .notice-date {
+    @extend .fs-2;
+    margin: $sp-2 0 0;
+    opacity: 0.7;
+  }
+}

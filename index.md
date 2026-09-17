@@ -13,6 +13,9 @@ seo:
 {{ site.description }}
 {: .fs-6 .fw-300 }
 
+{% assign instructors = site.staffers | where: 'role', 'Instructor' %}
+{% for staffer in instructors %}{% include staffer.html staffer=staffer nobio=true %}{% endfor %}
+
 {{ site.course_vars.quarter }}
 {: .label .label-blue }
 
@@ -22,8 +25,10 @@ seo:
 {{ site.course_vars.timings }}
 {: .label .label-blue }
 
-{: .important }
-If you are joining the course late, please ...! Please also note that I have **no control over the waitlist**. Please email [cogsadvising@ucsd.edu](mailto:cogsadvising@ucsd.edu) or drop in their office hours (your best bet)!
+{%- comment -%}
+  Important info & reminders. Edit _data/notices.yml to change what appears here.
+{%- endcomment -%}
+{% include notices.html %}
 
 ## Office Hours
 * **Prof. Lai**:

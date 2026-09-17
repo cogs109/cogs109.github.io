@@ -1,0 +1,24 @@
+# Important info & reminders shown at the top of the home page.
+#
+# This is the whole feature: add an entry here, push, and it appears. Delete an
+# entry (or set `show: false`) and it's gone. Order here is the order on the page.
+#
+# Fields
+#   type  important | note | warning | new | highlight   (default: note)
+#           important = blue, note = purple, warning = red,
+#           new = green, highlight = yellow
+#   body  the text. Markdown works: **bold**, [links](https://...), etc.
+#   title optional, replaces the default uppercase label ("IMPORTANT", "NOTE", ...)
+#   date  optional, shown as a small "Posted ..." line underneath
+#   show  optional, set to false to hide without deleting
+#
+# Tip: use `body: >` and indent the text underneath, as below. That lets you
+# write across several lines without worrying about YAML quoting.
+
+- type: important
+  body: >
+    If you are joining the course late and would still like to earn full credit
+    for assignments, please **read this**! Please also note that I have **no
+    control over the waitlist**. Please email
+    [cogsadvising@ucsd.edu](mailto:cogsadvising@ucsd.edu) or drop in their
+    office hours (your best bet)!

@@ -1,0 +1,40 @@
+{%- comment -%}
+  Renders one staff member's card.
+
+    {% include staffer.html staffer=<document> %}              name, email + bio
+    {% include staffer.html staffer=<document> nobio=true %}   name + email only
+    {% include staffer.html staffer=<document> bio=content %}  bio passed in
+
+  Used by _layouts/staffer.html (full card, on the Staff page) and by index.md
+  (nobio, so the home page shows the instructor without the bio text).
+{%- endcomment -%}
+{%- assign s = include.staffer -%}
+<div class="staffer">
+  {% if s.photo %}
+  <img class="staffer-image" src="{{ site.baseurl }}{{ s.subpath }}{{ s.photo }}" alt="">
+  {% endif %}
+  <div>
+    <h3 class="staffer-name">
+      {% if s.website %}
+      <a href="{{ s.website }}">{{ s.name }}</a>
+      {% else %}
+      {{ s.name }}
+      {% endif %}
+      {% if s.pronouns %}
+      <span class="staffer-pronouns">{{ s.pronouns }}</span>
+      {% endif %}
+    </h3>
+    {% if s.email %}
+    <p><a href="mailto:{{ s.email }}">{{ s.email }}</a></p>
+    {% endif %}
+    {% unless include.nobio %}
+      {% if s.section %}
+      <p class="staffer-meta">Quiz Section: {{ s.section | markdownify | strip_html }}</p>
+      {% endif %}
+      {% if s["office-hours"] %}
+      <p class="staffer-meta">Office Hours: {{ s["office-hours"] | markdownify | strip_html }}</p>
+      {% endif %}
+      {{ include.bio }}
+    {% endunless %}
+  </div>
+</div>
