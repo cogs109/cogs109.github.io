@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- Privacy guarantee: this policy blocks ALL network requests from the page.
+     No fetch/XHR, no external scripts, fonts, images, or trackers can load.
+     Audio lives only in memory (blob:) until the student downloads it. -->
+<meta http-equiv="Content-Security-Policy"
+      content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; media-src blob:; img-src data:; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Exit ticket recorder</title>
+<style>
+  :root {
+    --paper: #F2F5F9;
+    --surface: #FFFFFF;
+    --ink: #182B49;
+    --muted: #56657D;
+    --line: #D5DCE6;
+    --btn: #182B49;
+    --btn-ink: #FFFFFF;
+    --ring: #FFCD00;
+    --rec: #C8102E;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #0F1A2C;
+      --surface: #16243B;
+      --ink: #E8EDF5;
+      --muted: #9FB0C8;
+      --line: #2A3A55;
+      --btn: #FFCD00;
+      --btn-ink: #182B49;
+      --ring: #FFCD00;
+      --rec: #FF5A6E;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: ui-rounded, "SF Pro Rounded", "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+    padding: env(safe-area-inset-top, 0px) 1.25rem env(safe-area-inset-bottom, 0px);
+  }
+  main {
+    max-width: 30rem;
+    margin: 0 auto;
+    padding: 2.5rem 0 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+  }
+  h1 { font-size: 1.75rem; line-height: 1.2; margin: 0; letter-spacing: -0.01em; }
+  .lede { margin: 0.4rem 0 0; color: var(--muted); }
+
+  label { display: block; font-weight: 600; margin-bottom: 0.35rem; }
+  input {
+    width: 100%;
+    font: inherit;
+    padding: 0.7rem 0.85rem;
+    border: 1.5px solid var(--line);
+    border-radius: 10px;
+    background: var(--surface);
+    color: var(--ink);
+  }
+  input:focus-visible { outline: 3px solid var(--ring); outline-offset: 1px; }
+  .hint { font-size: 0.875rem; color: var(--muted); margin: 0.35rem 0 0; }
+
+  .stage { display: flex; flex-direction: column; align-items: center; gap: 1rem; padding: 1.25rem 0 0; }
+  .rec {
+    position: relative;
+    width: 9.5rem;
+    height: 9.5rem;
+    border-radius: 50%;
+    border: none;
+    background: var(--btn);
+    color: var(--btn-ink);
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.55rem;
+  }
+  /* Gold ring that swells with the student's voice level while recording */
+  .rec::before {
+    content: "";
+    position: absolute;
+    inset: -12px;
+    border-radius: 50%;
+    border: 6px solid var(--ring);
+    transform: scale(var(--level, 1));
+    transition: transform 80ms linear;
+  }
+  .rec .icon { width: 2.25rem; height: 2.25rem; border-radius: 50%; background: var(--rec); }
+  .rec.recording .icon { width: 2rem; height: 2rem; border-radius: 6px; }
+  .rec:focus-visible { outline: 3px solid var(--rec); outline-offset: 18px; }
+
+  .timer { font-variant-numeric: tabular-nums; font-size: 1.4rem; font-weight: 600; margin-top: 0.5rem; }
+  .status { color: var(--muted); text-align: center; min-height: 1.5em; margin: 0; }
+  .status.error { color: var(--rec); font-weight: 600; }
+
+  .result { display: none; flex-direction: column; gap: 0.85rem; }
+  .result.show { display: flex; }
+  audio { width: 100%; }
+  .actions { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+  .btn {
+    flex: 1 1 10rem;
+    text-align: center;
+    font: inherit;
+    font-weight: 600;
+    padding: 0.8rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .btn.primary { background: var(--btn); color: var(--btn-ink); border: 1.5px solid var(--btn); }
+  .btn.secondary { background: transparent; color: var(--ink); border: 1.5px solid var(--line); }
+  .btn:focus-visible { outline: 3px solid var(--ring); outline-offset: 2px; }
+
+  footer p { font-size: 0.875rem; color: var(--muted); margin: 0; border-top: 1px solid var(--line); padding-top: 1rem; }
+
+  @media (prefers-reduced-motion: reduce) { .rec::before { transition: none; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Exit ticket</h1>
+    <p class="lede">Record a short answer, listen back, then download the file and submit it on Canvas.</p>
+  </header>
+
+  <div>
+    <label for="name">Your name</label>
+    <input id="name" type="text" autocomplete="name" placeholder="e.g. Maya Chen">
+    <p class="hint">Optional. Only used to name the file.</p>
+  </div>
+
+  <section class="stage">
+    <button id="rec" class="rec" type="button" aria-label="Start recording">
+      <span class="icon" aria-hidden="true"></span>
+      <span id="recLabel">Record</span>
+    </button>
+    <div id="timer" class="timer" aria-hidden="true">0:00 / 3:00</div>
+    <p id="status" class="status" role="status" aria-live="polite">Tap Record. Your browser will ask to use the microphone.</p>
+  </section>
+
+  <section id="result" class="result" aria-label="Your recording">
+    <audio id="player" controls></audio>
+    <div class="actions">
+      <a id="download" class="btn primary" href="#">Download recording</a>
+      <button id="again" class="btn secondary" type="button">Record again</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>Your audio never leaves this device. This page can't upload anything; the recording exists only in this tab until you download it.</p>
+  </footer>
+</main>
+
+<script>
+  // ---- Settings you might change ----
+  const MAX_SECONDS = 180;          // auto-stop after 3 minutes
+  const FILE_PREFIX = "exit-ticket"; // start of every downloaded file name
+
+  const $ = (id) => document.getElementById(id);
+  const recBtn = $("rec"), recLabel = $("recLabel"), timerEl = $("timer"), statusEl = $("status");
+  const result = $("result"), player = $("player"), dl = $("download"), again = $("again"), nameInput = $("name");
+
+  let recorder = null, stream = null, chunks = [], startTime = 0, tick = null;
+  let audioCtx = null, raf = null, blobUrl = null, ext = "webm", downloaded = true;
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  const fmt = (s) => Math.floor(s / 60) + ":" + String(Math.floor(s % 60)).padStart(2, "0");
+  timerEl.textContent = "0:00 / " + fmt(MAX_SECONDS);
+
+  function setStatus(msg, isError = false) {
+    statusEl.textContent = msg;
+    statusEl.classList.toggle("error", isError);
+  }
+
+  // Chrome/Firefox/Android record WebM; Safari (incl. iPhone) records MP4/M4A.
+  function pickType() {
+    const types = ["audio/webm;codecs=opus", "audio/mp4", "audio/webm", "audio/ogg;codecs=opus"];
+    return types.find((t) => MediaRecorder.isTypeSupported(t)) || "";
+  }
+  function extFor(type) {
+    if (type.includes("mp4")) return "m4a";
+    if (type.includes("ogg")) return "ogg";
+    return "webm";
+  }
+  function slug(s) {
+    return s.normalize("NFKD").replace(/[\u0300-\u036f]/g, "")
+      .replace(/[^A-Za-z0-9]+/g, "-").replace(/^-+|-+$/g, "").slice(0, 40);
+  }
+  function fileName() {
+    const d = new Date();
+    const date = d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
+    const who = slug(nameInput.value);
+    return FILE_PREFIX + "_" + (who ? who + "_" : "") + date + "." + ext;
+  }
+
+  async function start() {
+    if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia || !window.MediaRecorder) {
+      setStatus("This browser can't record audio. Try an up-to-date Chrome, Safari, Firefox, or Edge.", true);
+      return;
+    }
+    try {
+      stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+    } catch (e) {
+      setStatus(e.name === "NotAllowedError"
+        ? "Microphone access is blocked. Allow it in your browser's site settings, then tap Record again."
+        : "No microphone found. Check that one is connected, then tap Record again.", true);
+      return;
+    }
+    clearResult();
+    const type = pickType();
+    recorder = new MediaRecorder(stream, type ? { mimeType: type } : undefined);
+    chunks = [];
+    recorder.ondataavailable = (e) => { if (e.data && e.data.size) chunks.push(e.data); };
+    recorder.onstop = finish;
+    recorder.start();
+
+    startTime = Date.now();
+    updateTimer();
+    tick = setInterval(updateTimer, 250);
+    recBtn.classList.add("recording");
+    recLabel.textContent = "Stop";
+    recBtn.setAttribute("aria-label", "Stop recording");
+    setStatus("Recording. Tap Stop when you're done.");
+    startMeter();
+  }
+
+  function updateTimer() {
+    const s = (Date.now() - startTime) / 1000;
+    timerEl.textContent = fmt(Math.min(s, MAX_SECONDS)) + " / " + fmt(MAX_SECONDS);
+    if (s >= MAX_SECONDS) stop();
+  }
+
+  function stop() {
+    if (recorder && recorder.state !== "inactive") recorder.stop();
+    clearInterval(tick);
+    stopMeter();
+    if (stream) stream.getTracks().forEach((t) => t.stop());
+    recBtn.classList.remove("recording");
+    recLabel.textContent = "Record";
+    recBtn.setAttribute("aria-label", "Start recording");
+  }
+
+  function finish() {
+    const type = recorder.mimeType || (chunks[0] && chunks[0].type) || "audio/webm";
+    ext = extFor(type);
+    const blob = new Blob(chunks, { type });
+    blobUrl = URL.createObjectURL(blob);
+    player.src = blobUrl;
+    dl.href = blobUrl;
+    dl.download = fileName();
+    downloaded = false;
+    result.classList.add("show");
+    setStatus("Listen back, then download your recording.");
+  }
+
+  function clearResult() {
+    if (blobUrl) URL.revokeObjectURL(blobUrl);
+    blobUrl = null;
+    player.removeAttribute("src");
+    player.load();
+    result.classList.remove("show");
+    downloaded = true;
+  }
+
+  // Voice-level ring (visual only; skipped if the user prefers reduced motion)
+  function startMeter() {
+    if (reduceMotion) return;
+    try {
+      audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      const analyser = audioCtx.createAnalyser();
+      analyser.fftSize = 512;
+      audioCtx.createMediaStreamSource(stream).connect(analyser);
+      const buf = new Uint8Array(analyser.fftSize);
+      const loop = () => {
+        analyser.getByteTimeDomainData(buf);
+        let sum = 0;
+        for (const v of buf) { const x = (v - 128) / 128; sum += x * x; }
+        const rms = Math.sqrt(sum / buf.length);
+        recBtn.style.setProperty("--level", (1 + Math.min(rms * 2.5, 0.35)).toFixed(3));
+        raf = requestAnimationFrame(loop);
+      };
+      loop();
+    } catch (e) { /* meter is optional */ }
+  }
+  function stopMeter() {
+    cancelAnimationFrame(raf);
+    recBtn.style.setProperty("--level", 1);
+    if (audioCtx) { audioCtx.close(); audioCtx = null; }
+  }
+
+  recBtn.addEventListener("click", () => {
+    if (recorder && recorder.state === "recording") stop(); else start();
+  });
+  again.addEventListener("click", () => {
+    clearResult();
+    timerEl.textContent = "0:00 / " + fmt(MAX_SECONDS);
+    setStatus("Tap Record when you're ready.");
+  });
+  dl.addEventListener("click", (e) => {
+    if (!blobUrl) { e.preventDefault(); return; }
+    dl.download = fileName(); // picks up a name typed after recording
+    downloaded = true;
+    setStatus("Downloaded. Now submit the file on Canvas.");
+  });
+  // Warn before closing the tab if a recording hasn't been downloaded yet
+  window.addEventListener("beforeunload", (e) => {
+    if (!downloaded) { e.preventDefault(); e.returnValue = ""; }
+  });
+</script>
+</body>
+</html>
