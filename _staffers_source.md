@@ -21,8 +21,11 @@ website: https://www.lucylai.com
 photo: lucy.png
 ---
 
-Hi everyone, I'm your instructor for COGS 109 this quarter! 👋 In this course, we’ll explore different ways to model and understand data, while building practical skills that are useful for research, industry, and beyond. You’re always welcome to my office hours to ask questions or just say hello. Looking forward to a great quarter together!
+👩🏻‍🏫 Hi everyone, I’m your instructor for COGS 109 this quarter! 👋 I’m an Assistant Teaching Professor in the Cognitive Science department, and this is my 2nd year at UCSD. In this course, we’ll explore different ways to model and understand data, while building practical skills that are useful for research, industry, and beyond. You’re always welcome to my [office hours](https://calendar.app.google/ddydBVxk5wZD8J8B9) to ask questions or just say hello (there will be snacks). Looking forward to a great quarter together!
 
+🎓 B.A. from Rice University, Ph.D. in Neuroscience from Harvard\
+🏠 Houston, TX 🤠\
+💬 applying to graduate school, living in Japan 🇯🇵, anime, latin dancing 💃
 
 ## jiesen
 ---
@@ -31,8 +34,9 @@ role: Teaching Assistant
 email: jiz147@ucsd.edu
 photo: jiesen.png
 ---
-
-Hello there! My name is Jiesen but you may also call me Jason. I'm a 1st year [MSCS](https://cse.ucsd.edu/graduate/degree-programs/ms-program) student and a HDSI alumni. Very excited to be the TA of COGS 109 and look forward to discussing with you about the different ways to model and understand data. In addition, I am also very into film and music, especially Asian and European ones. Feel free to reach out to me to discuss these or academic related topics!
+🎓 \
+🏠 \
+💬 
 
 ## zhicheng
 ---
@@ -41,14 +45,20 @@ role: Teaching Assistant
 email: zhh082@ucsd.edu
 photo: zhicheng.png
 ---
+🎓 \
+🏠 \
+💬 
 
 ## tanvi
 ---
 name: Tanvi Vidyala
 role: Teaching Assistant
 email: tvidyala@ucsd.edu
-photo: ptanvi.png
+photo: tanvi.png
 ---
+🎓 \
+🏠 \
+💬 
 
 ## natalia
 ---
@@ -57,6 +67,9 @@ role: PLA
 email: navanni@ucsd.edu
 photo: natalia.png
 ---
+🎓 \
+🏠 \
+💬 
 
 ## jerry
 ---
@@ -65,6 +78,9 @@ role: PLA
 email: juying@ucsd.edu
 photo: jerry.png
 ---
+🎓 \
+🏠 \
+💬 
 
 ## cissy
 ---
@@ -73,4 +89,7 @@ role: PLA
 email: ciyao@ucsd.edu
 photo: cissy.png
 ---
+🎓 \
+🏠 \
+💬 
 
