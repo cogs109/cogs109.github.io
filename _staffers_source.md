@@ -34,9 +34,9 @@ role: Teaching Assistant
 email: jiz147@ucsd.edu
 photo: jiesen.png
 ---
-🎓 \
-🏠 \
-💬 
+🎓 2nd-year M.S. Computer Science student, B.S. in Data Science from UCSD\
+🏠 Kaifeng, Henan, China 🇨🇳\
+💬 freelance photography, computational neuroscience research
 
 ## zhicheng
 ---
@@ -56,9 +56,9 @@ role: Teaching Assistant
 email: tvidyala@ucsd.edu
 photo: tanvi.png
 ---
-🎓 \
-🏠 \
-💬 
+🎓 1st-year MS Data Science student, B.S. in Cognitive Science ML from UCSD\
+🏠 Fremont, CA\
+💬 I was a transfer student! Talk to me about AI Safety, cafe hopping, dogs, rollerskating, gaming (Zelda, Animal Crossing, Tomodachi Life)
 
 ## natalia
 ---
@@ -78,9 +78,9 @@ role: PLA
 email: juying@ucsd.edu
 photo: jerry.png
 ---
-🎓 \
-🏠 \
-💬 
+🎓 3rd-year Math-CS and Cognitive Science major\
+🏠 Shanghai, China 🇨🇳\
+💬 love playing ultimate frisbee, reading novels, philosophy books
 
 ## cissy
 ---
@@ -89,7 +89,6 @@ role: PLA
 email: ciyao@ucsd.edu
 photo: cissy.png
 ---
-🎓 \
-🏠 \
-💬 
-
+🎓 2nd-year Cognitive Science major\
+🏠 Shenzhen, China 🇨🇳\
+💬 my favorite disney franchise is Wall-E 🦾 I love horror games, art, and sci-fi - if those are your things too, come chat with me!
