@@ -78,6 +78,10 @@ rhythm:
         text: Prof. Lai
         note: 2–3:15pm 1-1s (booked)<br>3:15–4:30pm open, walk-in
         kind: hours
+      Monday:
+        text: Zhicheng (TA)
+        note: 4–5pm @ CSB Courtyard
+        kind: hours
       Friday:
         text: TAs & PLAs
         note: During discussion section

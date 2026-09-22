@@ -76,9 +76,10 @@ callouts:
     color: red
 
 # Where each assignment gets submitted. _includes/calendar.html looks these up
-# by the FIRST WORD of the assignment name in _data/calendar.yml, so "Quiz 1"
-# and "Quiz 8" both resolve to `Quiz` below, and anything unmatched falls back
-# to `default`.
+# by the assignment name in _data/calendar.yml: first the WHOLE name, then its
+# FIRST WORD, then `default`. So "Quiz 1" and "Quiz 8" both resolve to `Quiz`,
+# while a one-off like "Project groups survey" can be listed in full to send it
+# somewhere other than where the rest of the `Project` items go.
 submit:
   default: 'https://canvas.ucsd.edu/courses/78581'
   Quiz: 'https://canvas.ucsd.edu/courses/78581'
@@ -87,6 +88,8 @@ submit:
   Pre-course: 'https://canvas.ucsd.edu/courses/78581'
   Post-course: 'https://canvas.ucsd.edu/courses/78581'
   Syllabus: 'https://canvas.ucsd.edu/courses/78581'
+  # one-off, matched on the full name (it is a survey, not a Gradescope submission)
+  Project groups survey: 'https://canvas.ucsd.edu/courses/78581'
 
 # Collections for website data
 collections:

@@ -56,7 +56,7 @@
               <ul class="cal-dues">
                 {%- for name in day.due -%}
                   {%- assign key2 = name | split: ' ' | first -%}
-                  {%- assign url = site.submit[key2] | default: site.submit.default -%}
+                  {%- assign url = site.submit[name] | default: site.submit[key2] | default: site.submit.default -%}
                 <li><a class="cal-due" href="{{ url }}">{{ name }}</a></li>
                 {%- endfor -%}
               </ul>
@@ -76,5 +76,5 @@
       </tbody>
     </table>
   </div>
-  <p class="cal-foot">All assignments are due by <strong>11:59pm PT</strong>. Assignment names link to where you submit them.</p>
+  <p class="cal-foot">All assignments are due by <strong>11:59pm PT</strong>. Assignment names link to where you submit them.<br><strong>*</strong> indicates a group submission.</p>
 </div>

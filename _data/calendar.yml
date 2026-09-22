@@ -46,7 +46,7 @@
     date: Oct 2
     lec: Lec 3
     title: Question-driven exploratory data analysis
-    section: Meet your TAs & each other, establishing expectations for section
+    section: Meet your TAs<br>Establish expectations<br>Week 1 review
 
 - week: 2
   month: Oct
@@ -67,7 +67,7 @@
     date: Oct 9
     lec: Lec 6
     title: Qualitative variables in regression
-    section: Section
+    section: Week 2 review
 
 - week: 3
   topic: |
@@ -78,7 +78,7 @@
     date: Oct 12
     lec: Lec 7
     title: Non-linear features in regression (interactions, polynomial, log)
-    due: [Quiz 2, Homework 2]
+    due: [Quiz 2, Homework 2, Project groups survey]
   wed:
     date: Oct 14
     lec: Lec 8
@@ -86,8 +86,8 @@
   fri:
     date: Oct 16
     lec: Lec 9
-    title: Regression neural networks
-    section: Exam review
+    title: Regression neural networks<br>_Project groups assigned_
+    section: Week 3/Exam 1 review<br>Project group work
 
 - week: 4
   topic: |
@@ -107,7 +107,7 @@
     lec: Lec 11
     title: Multiple logistic regression
     note: Last day to drop without a "W"
-    section: Section
+    section: Week 4 review<br>Project group work
 
 - week: 5
   topic: |
@@ -120,7 +120,7 @@
     date: Oct 26
     lec: Lec 12
     title: Multinomial logistic regression & classification neural networks
-    due: [Quiz 4, Homework 4, Project Checkpoint 1]
+    due: [Quiz 4, Homework 4, Project Checkpoint 1*]
   wed:
     date: Oct 28
     lec: Lec 13
@@ -129,7 +129,7 @@
     date: Oct 30
     lec: Lec 14
     title: Bootstrap methods
-    section: Section
+    section: Week 5 review<br>Project group work
 
 - week: 6
   month: Nov
@@ -151,7 +151,7 @@
     lec: Lec 17
     title: Predictive modeling workflow
     note: Last day to drop with a "W"
-    section: Section
+    section: Week 6/Exam 2 review<br>Project group work
 
 - week: 7
   topic: |
@@ -168,7 +168,7 @@
     date: Nov 13
     event: "NO CLASS"
     note: Prof. Lai giving talks in NYC
-    section: Section
+    section: Project group work
 
 - week: 8
   topic: |
@@ -179,7 +179,7 @@
     date: Nov 16
     lec: Lec 18
     title: Decision trees
-    due: [Project Checkpoint 2]
+    due: [Project Checkpoint 2*]
   wed:
     date: Nov 18
     lec: Lec 19
@@ -188,7 +188,7 @@
     date: Nov 20
     lec: Lec 20
     title: Modern tree methods (XGBoost, LightGBM, CatBoost)
-    section: Section
+    section: Week 8 review<br>Project group work
 
 - week: 9
   topic: |
@@ -227,7 +227,7 @@
     date: Dec 4
     event: COURSE PROJECT EXPO
     title: "& course conclusion"
-    due: [Project Checkpoint 3]
+    due: ["Project Checkpoint 3 (Final submission)*"]
     note: Dec 5–7 · Project oral exams
     section: No section
 
@@ -239,7 +239,7 @@
   wed:
     date: Dec 9
     event: ELECTIVE FINAL EXAM
-    title: 9–10:30am @ COA 130
+    title: 9–11am @ COA 130
     note: For those who did not complete the course project
   fri:
     date: Dec 11
