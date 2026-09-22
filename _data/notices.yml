@@ -15,10 +15,10 @@
 # Tip: use `body: >` and indent the text underneath, as below. That lets you
 # write across several lines without worrying about YAML quoting.
 
+- type: note
+  body: >
+    If you are joining the course late, please complete all assignments by the Friday of Week 3 (there will be no late penalty and you do not need to email us)! 
+
 - type: important
   body: >
-    If you are joining the course late and would still like to earn full credit
-    for assignments, please **read this**! Please also note that I have **no
-    control over the waitlist**. Please email
-    [cogsadvising@ucsd.edu](mailto:cogsadvising@ucsd.edu) or drop in their
-    office hours (your best bet)!
+    Please note that I have **no control over the waitlist**. Please email [cogsadvising@ucsd.edu](mailto:cogsadvising@ucsd.edu) or drop in their office hours (your best bet). If you intend to enroll, I would keep up with class while you're waiting to get off the waitlist!
