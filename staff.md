@@ -8,7 +8,7 @@ description: A listing of all the course staff members.
 # Course Staff
 
 ## Get to know your COGS 109 course staff! 
-🎓 degree 🏠 hometown 💬 talk to me about...
+🎓 degree 🏠 hometown 💬 fun facts/talk to me about...
 
 {% comment %}
   Everyone on this page is generated from _staffers_source.md at build time by
