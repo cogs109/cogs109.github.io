@@ -13,10 +13,18 @@
 #      title    what the class covers
 #      event    big red text instead of a lecture, e.g. "EXAM 1"
 #      note     small red italic line, e.g. drop deadlines
-#      due      list of assignment names; each becomes a submission link.
-#               The link is looked up in `submit:` in _config.yml by the first
-#               word of the name ("Quiz 1" -> submit.Quiz), so adding
-#               "Quiz 9" here needs no other change.
+#      due      list of assignments; each becomes a submission link. Either
+#               write the name on its own, or give it a url of its own:
+#
+#                 due:
+#                   - Quiz 2
+#                   - Homework 2
+#                   - name: Project groups survey
+#                     url: https://forms.gle/YOUR_FORM_ID
+#
+#               Without a url, the link is looked up in `submit:` in
+#               _config.yml -- first the whole name, then its first word
+#               ("Quiz 1" -> submit.Quiz), then submit.default.
 #      section  (fri only) what happens in discussion section
 # ─────────────────────────────────────────────────────────────────────────────
 
