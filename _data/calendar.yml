@@ -214,8 +214,9 @@
     title: PCA (cont'd)
   fri:
     date: Nov 27
-    event: "NO CLASS / SECTION"
+    event: NO CLASS
     note: Thanksgiving holiday
+    section: No section
 
 - week: 10
   month: Dec

@@ -34,11 +34,15 @@ seo:
 
 All sections meet on **Fridays @ RWAC 0103**.
 
-| Section | Time | Staff |
-|:--|:--|:--|
+<div class="section-table" markdown="1">
+
+| Time | Staff |
+|:--|:--|
 | F, 3-3:50pm | Jiesen + Natalia |
 | F, 4-4:50pm | Zhicheng + Jerry |
 | F, 5-5:50pm | Tanvi + Cissy |
+
+</div>
 
 ## Office Hours
 * **Prof. Lai**:

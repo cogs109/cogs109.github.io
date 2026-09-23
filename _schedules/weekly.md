@@ -62,6 +62,17 @@ rhythm:
         kind: work
         span: 4
 
+  - component: Course project
+    note: Group submission
+    cells:
+      Monday:
+        text: Checkpoint 1 · Oct 26<br>Checkpoint 2 · Nov 16
+        kind: due
+      Friday:
+        text: Checkpoint 3 · Dec 4
+        note: Final submission<br>Oral exams Dec 5–7
+        kind: due
+
   - component: In-class exams
     note: During lecture
     cells:
