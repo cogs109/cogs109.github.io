@@ -95,7 +95,7 @@
     title: Non-linear features in regression (interactions, polynomial, log)
     due: [Quiz 2, Homework 2]
       - name: Project groups survey
-        url: 
+        url: https://forms.gle/
   wed:
     date: Oct 14
     lec: Lec 8
@@ -141,7 +141,7 @@
     title: Multinomial logistic regression & classification neural networks
     due: [Quiz 4, Homework 4]
       - name: Project Checkpoint 1*
-        url: 
+        url: https://forms.gle/
   wed:
     date: Oct 28
     lec: Lec 13
@@ -203,8 +203,8 @@
     lec: Lec 18
     title: Decision trees
     due: 
-      - name: Project Checkpoint 2*
-        url: 
+      - name: [Project Checkpoint 2*]
+        url: https://forms.gle/
   wed:
     date: Nov 18
     lec: Lec 19
@@ -256,7 +256,7 @@
     title: "& course conclusion"
     due: 
       - name: [Project Checkpoint 3 (Final submission)*]
-        url: 
+        url: https://forms.gle/
     note: Dec 5–7 · Project oral exams
     section: No section
 
