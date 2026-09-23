@@ -21,7 +21,7 @@ days:
 
 rhythm:
   - component: Lecture
-    note: 9–9:50am @ COA 130
+    note: 9–9:50am @ <a href="https://maps.app.goo.gl/EBMotpwtm59M6zW38" target="_blank" rel="noopener">COA 130 &#x2197;</a>
     cells:
       Monday:
         text: Lecture
@@ -34,7 +34,7 @@ rhythm:
         kind: lecture
 
   - component: Discussion section
-    note: Fridays @ <a href="https://maps.app.goo.gl/63CmTsb4SY2KBnh88" target="_blank" rel="noopener">RWAC 0103 &#x2197;</a> + Zoom
+    note: Fridays @ <a href="https://maps.app.goo.gl/63CmTsb4SY2KBnh88" target="_blank" rel="noopener">RWAC 0103 &#x2197;</a>
     cells:
       Friday:
         text: S1 · 3–3:50pm<br>S2 · 4–4:50pm<br>S3 · 5–5:50pm
