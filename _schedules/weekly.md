@@ -86,14 +86,6 @@ rhythm:
   - component: Office hours
     group: hours
     cells:
-      Wednesday:
-        text: Prof. Lai
-        note: 2–3:15pm 1-1s (<a href="https://calendar.app.google/AFfkzCq6sAxN44oe7" target="_blank" rel="noopener">booked</a>)<br>3:15–4:30pm open, walk-in<br>@ <a href="https://maps.app.goo.gl/bF2MJgm9aCoEa3ak7" target="_blank" rel="noopener">CSB 244 &#x2197;</a>
-        kind: hours
-
-  - component: ''
-    group: hours
-    cells:
       Monday:
         text: Zhicheng (TA)
         note: 4–5pm @ <a href="https://docs.google.com/document/d/1Sr3AmWssSLXGfaJcQRzJXxQ1SHfFgLloogcglFF3_04/edit?usp=sharing" target="_blank" rel="noopener">CSB Courtyard &#x2197;</a>
@@ -103,20 +95,12 @@ rhythm:
         note: 2–3pm @ <a href="https://maps.app.goo.gl/cMC7E2P4PCrc8D9L8" target="_blank" rel="noopener">HDSI 155 &#x2197;</a>
         kind: hours
       Wednesday:
-        text: Tanvi (TA)
-        note: 2–3pm @ <a href="https://maps.app.goo.gl/cMC7E2P4PCrc8D9L8" target="_blank" rel="noopener">HDSI 155 &#x2197;</a>
+        text: Prof. Lai
+        note: 2–3:15pm 1-1s (<a href="https://calendar.app.google/AFfkzCq6sAxN44oe7" target="_blank" rel="noopener">booked</a>)<br>3:15–4:30pm open, walk-in<br>@ <a href="https://maps.app.goo.gl/bF2MJgm9aCoEa3ak7" target="_blank" rel="noopener">CSB 244 &#x2197;</a>
         kind: hours
       Thursday:
         text: Cissy (PLA)
         note: 10:30–11:30am @ <a href="https://docs.google.com/document/d/1Sr3AmWssSLXGfaJcQRzJXxQ1SHfFgLloogcglFF3_04/edit?usp=sharing" target="_blank" rel="noopener">CSB Courtyard &#x2197;</a>
-        kind: hours
-
-  - component: ''
-    group: hours
-    cells:
-      Thursday:
-        text: Jiesen (TA)
-        note: 5–6pm @ <a href="https://maps.app.goo.gl/cMC7E2P4PCrc8D9L8" target="_blank" rel="noopener">HDSI 155 &#x2197;</a>
         kind: hours
       Friday:
         text: All TAs & PLAs
@@ -126,9 +110,21 @@ rhythm:
   - component: ''
     group: hours
     cells:
+      Wednesday:
+        text: Tanvi (TA)
+        note: 2–3pm @ <a href="https://maps.app.goo.gl/cMC7E2P4PCrc8D9L8" target="_blank" rel="noopener">HDSI 155 &#x2197;</a>
+        kind: hours
       Thursday:
         text: Natalia (PLA)
         note: 3pm on <a href="https://us04web.zoom.us/j/76172509149?pwd=wGaxLh4b0B5VwQOZjikw8N0bNWTlcH.1" target="_blank" rel="noopener">Zoom &#x2197;</a>
+        kind: hours
+
+  - component: ''
+    group: hours
+    cells:
+      Thursday:
+        text: Jiesen (TA)
+        note: 5–6pm @ <a href="https://maps.app.goo.gl/cMC7E2P4PCrc8D9L8" target="_blank" rel="noopener">HDSI 155 &#x2197;</a>
         kind: hours
 
   - component: Other
