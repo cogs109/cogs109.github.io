@@ -46,7 +46,10 @@
     date: Sept 28
     lec: Lec 1
     title: What is statistical learning? Prediction vs. inference
-    due: [Pre-course survey, Syllabus quiz]
+    due: 
+    - name: Pre-course survey
+      url: https://docs.google.com/forms/d/e/1FAIpQLSd-cEbyVAP_mPQEnLrdn-fcslL_hM7CghkWDU5k4O7VAmjjdg/viewform?usp=dialog
+    - Syllabus quiz
   wed:
     date: Sept 30
     lec: Lec 2
