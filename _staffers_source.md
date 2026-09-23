@@ -45,9 +45,9 @@ role: Teaching Assistant
 email: zhh082@ucsd.edu
 photo: zhicheng.png
 ---
-🎓 \
-🏠 \
-💬 
+🎓 2nd-year Ph.D. student in Cognitive Science, working with Dr. Haijun Xia\
+🏠 Zhejiang, China 🇨🇳\
+💬 go karts and F1!
 
 ## tanvi
 ---
