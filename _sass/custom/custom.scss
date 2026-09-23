@@ -145,27 +145,3 @@ summary {
     opacity: 0.7;
   }
 }
-
-// Narrow table (used for the discussion sections list on the home page).
-// The theme gives every table `min-width: 100%` inside a full-width
-// `.table-wrapper`, so both have to be relaxed for the table to shrink to
-// fit its contents.
-.section-table {
-  .table-wrapper {
-    display: inline-block;
-    width: auto;
-    min-width: 0;
-    max-width: 100%;
-  }
-
-  table {
-    min-width: 0;
-    width: auto;
-  }
-
-  th,
-  td {
-    min-width: 0;
-    white-space: nowrap;
-  }
-}

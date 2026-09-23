@@ -9,12 +9,10 @@ description: Exam dates, format, and policies for COGS 109.
 
 There are **3 in-class exams** in this course, spaced roughly 3 weeks apart. They are **non-cumulative** — each one covers only the material since the last exam. Please mark them in your calendar!
 
-| Exam | Date | |
-|:--|:--|:--|
-| **Exam 1** | Monday, Oct 19 | in class |
-| **Exam 2** | Monday, Nov 9 | in class |
-| **Exam 3** | Wednesday, Dec 2 | in class |
-| **Elective final** | Wednesday, Dec 9, 9-11am @ COA 130 | only for students who do not complete the course project |
+* **Exam 1** — Monday, **Oct 19**, in class
+* **Exam 2** — Monday, **Nov 9**, in class
+* **Exam 3** — Wednesday, **Dec 2**, in class
+* **Elective final** — Wednesday, **Dec 9**, 9-11am @ COA 130 (only for students who do not complete the course project)
 
 ## Format
 

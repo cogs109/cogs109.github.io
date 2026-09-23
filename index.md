@@ -34,22 +34,20 @@ seo:
 
 All sections meet on **Fridays @ RWAC 0103**.
 
-<div class="section-table" markdown="1">
-
-| Time | Staff |
-|:--|:--|
-| F, 3-3:50pm | Jiesen + Natalia |
-| F, 4-4:50pm | Zhicheng + Jerry |
-| F, 5-5:50pm | Tanvi + Cissy |
-
-</div>
+* **F, 3-3:50pm** — Jiesen + Natalia
+* **F, 4-4:50pm** — Zhicheng + Jerry
+* **F, 5-5:50pm** — Tanvi + Cissy
 
 ## Office Hours
 * **Prof. Lai**:
   * Wed, 2-3:15pm (1-1, <a href="https://calendar.app.google/1nebbtvdYdn6WFpw5" target="_blank" rel="noopener">book &#x2197;</a> only) @ CSB 244 or <a href="https://ucsd.zoom.us/my/lucylai" target="_blank" rel="noopener">Zoom &#x2197;</a>
   * Wed, 3:15-4:30pm (open office hours, walk-in!) @ CSB 244
-* **TAs & PLAs**: During your discussion section as well as...
-  * **Zhicheng**: Mon, 4-5pm @ <a href="https://docs.google.com/document/d/1Sr3AmWssSLXGfaJcQRzJXxQ1SHfFgLloogcglFF3_04/edit?usp=sharing" target="_blank" rel="noopener">CSB Courtyard &#x2197;</a>
+* **Zhicheng** (TA): Mon, 4-5pm & during section @ <a href="https://docs.google.com/document/d/1Sr3AmWssSLXGfaJcQRzJXxQ1SHfFgLloogcglFF3_04/edit?usp=sharing" target="_blank" rel="noopener">CSB Courtyard &#x2197;</a>
+* **Jerry** (PLA): Tues, 2-3pm & during section @ HDSI 155
+* **Tanvi** (TA): Wed, 2-3pm & during section @ HDSI 155
+* **Cissy** (PLA): Thurs, 10:30-11:30am & during section @ <a href="https://docs.google.com/document/d/1Sr3AmWssSLXGfaJcQRzJXxQ1SHfFgLloogcglFF3_04/edit?usp=sharing" target="_blank" rel="noopener">CSB Courtyard &#x2197;</a>
+* **Jiesen** (TA): Thurs, 5-6pm & during section @ HDSI 155
+* **Natalia** (PLA): During section
 
 ## Course Calendar
 
