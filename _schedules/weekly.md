@@ -37,7 +37,7 @@ rhythm:
     note: Fridays @ <a href="https://maps.app.goo.gl/63CmTsb4SY2KBnh88" target="_blank" rel="noopener">RWAC 0103 &#x2197;</a>
     cells:
       Friday:
-        text: S1 · 3–3:50pm<br>S2 · 4–4:50pm<br>S3 · 5–5:50pm
+        text: S1 · 3–3:50pm · Jiesen + Natalia<br>S2 · 4–4:50pm · Zhicheng + Jerry<br>S3 · 5–5:50pm · Tanvi + Cissy
         kind: section
 
   - component: Assignments
