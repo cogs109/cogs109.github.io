@@ -34,7 +34,7 @@ rhythm:
         kind: lecture
 
   - component: Discussion section
-    note: Fridays @ RWAC 0103 + Zoom
+    note: Fridays @ <a href="https://maps.app.goo.gl/63CmTsb4SY2KBnh88" target="_blank" rel="noopener">RWAC 0103 &#x2197;</a> + Zoom
     cells:
       Friday:
         text: S1 · 3–3:50pm<br>S2 · 4–4:50pm<br>S3 · 5–5:50pm
@@ -87,7 +87,7 @@ rhythm:
     cells:
       Wednesday:
         text: Prof. Lai
-        note: 2–3:15pm 1-1s (<a href="https://calendar.app.google/AFfkzCq6sAxN44oe7" target="_blank" rel="noopener">booked</a>)<br>3:15–4:30pm open, walk-in<br>@ CSB 244
+        note: 2–3:15pm 1-1s (<a href="https://calendar.app.google/AFfkzCq6sAxN44oe7" target="_blank" rel="noopener">booked</a>)<br>3:15–4:30pm open, walk-in<br>@ <a href="https://maps.app.goo.gl/bF2MJgm9aCoEa3ak7" target="_blank" rel="noopener">CSB 244 &#x2197;</a>
         kind: hours
 
   - component: ''
@@ -98,11 +98,11 @@ rhythm:
         kind: hours
       Tuesday:
         text: Jerry (PLA)
-        note: 2–3pm @ HDSI 155
+        note: 2–3pm @ <a href="https://maps.app.goo.gl/cMC7E2P4PCrc8D9L8" target="_blank" rel="noopener">HDSI 155 &#x2197;</a>
         kind: hours
       Wednesday:
         text: Tanvi (TA)
-        note: 2–3pm @ HDSI 155
+        note: 2–3pm @ <a href="https://maps.app.goo.gl/cMC7E2P4PCrc8D9L8" target="_blank" rel="noopener">HDSI 155 &#x2197;</a>
         kind: hours
       Thursday:
         text: Cissy (PLA)
@@ -113,7 +113,7 @@ rhythm:
     cells:
       Thursday:
         text: Jiesen (TA)
-        note: 5–6pm @ HDSI 155
+        note: 5–6pm @ <a href="https://maps.app.goo.gl/cMC7E2P4PCrc8D9L8" target="_blank" rel="noopener">HDSI 155 &#x2197;</a>
         kind: hours
       Friday:
         text: All TAs & PLAs
