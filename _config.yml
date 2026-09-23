@@ -82,14 +82,9 @@ callouts:
 # somewhere other than where the rest of the `Project` items go.
 submit:
   default: 'https://canvas.ucsd.edu/courses/78581'
-  Quiz: 'https://canvas.ucsd.edu/courses/78581'
+  Quiz: 'https://canvas.ucsd.edu/courses/78581/quizzes'
   Homework: 'https://www.gradescope.com/courses/1403410/'
   Project: 'https://www.gradescope.com/courses/1403410/'
-  Pre-course: 'https://canvas.ucsd.edu/courses/78581'
-  Post-course: 'https://canvas.ucsd.edu/courses/78581'
-  Syllabus: 'https://canvas.ucsd.edu/courses/78581'
-  # one-off, matched on the full name (it is a survey, not a Gradescope submission)
-  Project groups survey: 'https://canvas.ucsd.edu/courses/78581'
 
 # Collections for website data
 collections:
