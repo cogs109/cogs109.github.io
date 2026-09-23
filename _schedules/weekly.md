@@ -37,7 +37,7 @@ rhythm:
     note: Fridays @ <a href="https://maps.app.goo.gl/63CmTsb4SY2KBnh88" target="_blank" rel="noopener">RWAC 0103 &#x2197;</a>
     cells:
       Friday:
-        text: S1 · 3–3:50pm · Jiesen + Natalia<br>S2 · 4–4:50pm · Zhicheng + Jerry<br>S3 · 5–5:50pm · Tanvi + Cissy
+        text: S1 · 3–3:50pm<br>S2 · 4–4:50pm<br>S3 · 5–5:50pm
         kind: section
 
   - component: Assignments
@@ -84,6 +84,7 @@ rhythm:
         kind: exam
 
   - component: Office hours
+    group: hours
     cells:
       Wednesday:
         text: Prof. Lai
@@ -91,6 +92,7 @@ rhythm:
         kind: hours
 
   - component: ''
+    group: hours
     cells:
       Monday:
         text: Zhicheng (TA)
@@ -110,6 +112,7 @@ rhythm:
         kind: hours
 
   - component: ''
+    group: hours
     cells:
       Thursday:
         text: Jiesen (TA)
@@ -117,7 +120,7 @@ rhythm:
         kind: hours
       Friday:
         text: All TAs & PLAs
-        note: During discussion section<br>(incl. Natalia)
+        note: During discussion section
         kind: hours
 
   - component: Other

@@ -31,11 +31,17 @@ seo:
 
 {% include notices.html %}
 
-{% comment %} The weekly rhythm; edit _schedules/weekly.md {% endcomment %}
+## Discussion Sections
 
-{% for schedule in site.schedules %}
-{{ schedule }}
-{% endfor %}
+All sections meet on **Fridays @ <a href="https://maps.app.goo.gl/63CmTsb4SY2KBnh88" target="_blank" rel="noopener">RWAC 0103 &#x2197;</a>**.
+
+* **F, 3-3:50pm** — [Jiesen](mailto:jiz147@ucsd.edu) + [Natalia](mailto:navanni@ucsd.edu)
+* **F, 4-4:50pm** — [Zhicheng](mailto:zhh082@ucsd.edu) + [Jerry](mailto:juying@ucsd.edu)
+* **F, 5-5:50pm** — [Tanvi](mailto:tvidyala@ucsd.edu) + [Cissy](mailto:ciyao@ucsd.edu)
+
+{% comment %} Office-hours grid, built from the rows tagged `group: hours` in _schedules/weekly.md {% endcomment %}
+
+{% include hours.html %}
 
 ## Course Calendar
 
