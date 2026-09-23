@@ -93,7 +93,9 @@
     date: Oct 12
     lec: Lec 7
     title: Non-linear features in regression (interactions, polynomial, log)
-    due: [Quiz 2, Homework 2, Project groups survey]
+    due: [Quiz 2, Homework 2]
+      - name: Project groups survey
+        url: 
   wed:
     date: Oct 14
     lec: Lec 8
@@ -137,7 +139,9 @@
     date: Oct 26
     lec: Lec 12
     title: Multinomial logistic regression & classification neural networks
-    due: [Quiz 4, Homework 4, Project Checkpoint 1*]
+    due: [Quiz 4, Homework 4]
+      - name: Project Checkpoint 1*
+        url: 
   wed:
     date: Oct 28
     lec: Lec 13
@@ -198,7 +202,9 @@
     date: Nov 16
     lec: Lec 18
     title: Decision trees
-    due: [Project Checkpoint 2*]
+    due: 
+      - name: Project Checkpoint 2*
+        url: 
   wed:
     date: Nov 18
     lec: Lec 19
@@ -248,7 +254,9 @@
     date: Dec 4
     event: COURSE PROJECT EXPO
     title: "& course conclusion"
-    due: ["Project Checkpoint 3 (Final submission)*"]
+    due: 
+      - name: [Project Checkpoint 3 (Final submission)*]
+        url: 
     note: Dec 5–7 · Project oral exams
     section: No section
 
