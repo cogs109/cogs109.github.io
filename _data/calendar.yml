@@ -93,6 +93,7 @@
     date: Oct 12
     lec: Lec 7
     title: Non-linear features in regression (interactions, polynomial, log)
+<<<<<<< HEAD
     due:
       - Quiz 2
       - Homework 2
@@ -100,6 +101,13 @@
       #   - name: Project groups survey
       #     url: https://forms.gle/YOUR_FORM_ID
       - Project groups survey
+=======
+    due: 
+      - Quiz 2
+      - Homework 2
+      - name: Project groups survey
+        url: https://forms.gle/
+>>>>>>> 51a0503f8387f25065e1bb3886e06f86a763aa15
   wed:
     date: Oct 14
     lec: Lec 8
@@ -146,7 +154,12 @@
     due:
       - Quiz 4
       - Homework 4
+<<<<<<< HEAD
       - Project Checkpoint 1*
+=======
+      - name: Project Checkpoint 1*
+        url: https://forms.gle/
+>>>>>>> 51a0503f8387f25065e1bb3886e06f86a763aa15
   wed:
     date: Oct 28
     lec: Lec 13
