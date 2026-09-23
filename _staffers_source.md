@@ -67,7 +67,7 @@ role: PLA
 email: navanni@ucsd.edu
 photo: natalia.png
 ---
-🎓 4th-year Cognitive Science spec. Design & Interaction\ 
+🎓 4th-year Cognitive Science spec. Design & Interaction\
 🏠 San Diego, CA\
 💬 I’m a twin so if you wave at me on campus and I don’t recognize you, don’t take it personally, it might have been my twin 👯‍♀️
 
