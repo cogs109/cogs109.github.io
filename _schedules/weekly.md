@@ -87,15 +87,37 @@ rhythm:
     cells:
       Wednesday:
         text: Prof. Lai
-        note: 2–3:15pm 1-1s (booked)<br>3:15–4:30pm open, walk-in
+        note: 2–3:15pm 1-1s (booked)<br>3:15–4:30pm open, walk-in<br>@ CSB 244
         kind: hours
+
+  - component: ''
+    cells:
       Monday:
         text: Zhicheng (TA)
-        note: 4–5pm @ CSB Courtyard
+        note: 4–5pm @ <a href="https://docs.google.com/document/d/1Sr3AmWssSLXGfaJcQRzJXxQ1SHfFgLloogcglFF3_04/edit?usp=sharing" target="_blank" rel="noopener">CSB Courtyard &#x2197;</a>
+        kind: hours
+      Tuesday:
+        text: Jerry (PLA)
+        note: 2–3pm @ HDSI 155
+        kind: hours
+      Wednesday:
+        text: Tanvi (TA)
+        note: 2–3pm @ HDSI 155
+        kind: hours
+      Thursday:
+        text: Cissy (PLA)
+        note: 10:30–11:30am @ <a href="https://docs.google.com/document/d/1Sr3AmWssSLXGfaJcQRzJXxQ1SHfFgLloogcglFF3_04/edit?usp=sharing" target="_blank" rel="noopener">CSB Courtyard &#x2197;</a>
+        kind: hours
+
+  - component: ''
+    cells:
+      Thursday:
+        text: Jiesen (TA)
+        note: 5–6pm @ HDSI 155
         kind: hours
       Friday:
-        text: TAs & PLAs
-        note: During discussion section
+        text: All TAs & PLAs
+        note: During discussion section<br>(incl. Natalia)
         kind: hours
 
   - component: Other
