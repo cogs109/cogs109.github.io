@@ -39,6 +39,8 @@ All sections meet on **Fridays @ <a href="https://maps.app.goo.gl/63CmTsb4SY2KBn
 * **F, 4-4:50pm** — [Zhicheng](mailto:zhh082@ucsd.edu) + [Jerry](mailto:juying@ucsd.edu)
 * **F, 5-5:50pm** — [Tanvi](mailto:tvidyala@ucsd.edu) + [Cissy](mailto:ciyao@ucsd.edu)
 
+## Office Hours
+
 {% comment %} Office-hours grid, built from the rows tagged `group: hours` in _schedules/weekly.md {% endcomment %}
 
 {% include hours.html %}
