@@ -56,7 +56,7 @@ role: Teaching Assistant
 email: tvidyala@ucsd.edu
 photo: tanvi.png
 ---
-🎓 1st-year MS Data Science student, B.S. in Cognitive Science ML from UCSD\
+🎓 1st-year MS Data Science student, B.S. in Cognitive Science spec. ML from UCSD\
 🏠 Fremont, CA\
 💬 I was a transfer student! Talk to me about AI Safety, cafe hopping, dogs, rollerskating, gaming (Zelda, Animal Crossing, Tomodachi Life)
 
@@ -67,9 +67,9 @@ role: PLA
 email: navanni@ucsd.edu
 photo: natalia.png
 ---
-🎓 \
-🏠 \
-💬 
+🎓 4th-year Cognitive Science spec. Design & Interaction\ 
+🏠 San Diego, CA\
+💬 I’m a twin so if you wave at me on campus and I don’t recognize you, don’t take it personally, it might have been my twin 👯‍♀️
 
 ## jerry
 ---
