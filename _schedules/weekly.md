@@ -123,6 +123,14 @@ rhythm:
         note: During discussion section
         kind: hours
 
+  - component: ''
+    group: hours
+    cells:
+      Thursday:
+        text: Natalia (PLA)
+        note: 3pm on <a href="https://us04web.zoom.us/j/76172509149?pwd=wGaxLh4b0B5VwQOZjikw8N0bNWTlcH.1" target="_blank" rel="noopener">Zoom &#x2197;</a>
+        kind: hours
+
   - component: Other
     cells:
       Monday:
