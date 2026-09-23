@@ -30,6 +30,9 @@ seo:
 
 {% include notices.html %}
 
+<div class="two-col" markdown="1">
+<div markdown="1">
+
 ## Discussion Sections
 
 All sections meet on **Fridays @ RWAC 0103**.
@@ -37,6 +40,9 @@ All sections meet on **Fridays @ RWAC 0103**.
 * **F, 3-3:50pm** — Jiesen + Natalia
 * **F, 4-4:50pm** — Zhicheng + Jerry
 * **F, 5-5:50pm** — Tanvi + Cissy
+
+</div>
+<div markdown="1">
 
 ## Office Hours
 * **Prof. Lai**:
@@ -48,6 +54,9 @@ All sections meet on **Fridays @ RWAC 0103**.
 * **Cissy** (PLA): Thurs, 10:30-11:30am & during section @ <a href="https://docs.google.com/document/d/1Sr3AmWssSLXGfaJcQRzJXxQ1SHfFgLloogcglFF3_04/edit?usp=sharing" target="_blank" rel="noopener">CSB Courtyard &#x2197;</a>
 * **Jiesen** (TA): Thurs, 5-6pm & during section @ HDSI 155
 * **Natalia** (PLA): During section
+
+</div>
+</div>
 
 ## Course Calendar
 
