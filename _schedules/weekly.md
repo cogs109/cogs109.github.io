@@ -34,7 +34,7 @@ rhythm:
         kind: lecture
 
   - component: Discussion section
-    note: Fridays @ RWAC 0103 + Zoom
+    note: Fridays @ RWAC 0103 
     cells:
       Friday:
         text: S1 · 3–3:50pm<br>S2 · 4–4:50pm<br>S3 · 5–5:50pm
