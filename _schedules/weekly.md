@@ -100,7 +100,7 @@ rhythm:
         kind: hours
       Thursday:
         text: Cissy (PLA)
-        note: 10:30–11:30am @ <a href="https://docs.google.com/document/d/1Sr3AmWssSLXGfaJcQRzJXxQ1SHfFgLloogcglFF3_04/edit?usp=sharing" target="_blank" rel="noopener">CSB Courtyard &#x2197;</a>
+        note: 10–11am @ <a href="https://docs.google.com/document/d/1Sr3AmWssSLXGfaJcQRzJXxQ1SHfFgLloogcglFF3_04/edit?usp=sharing" target="_blank" rel="noopener">CSB Courtyard &#x2197;</a>
         kind: hours
       Friday:
         text: All TAs & PLAs
