@@ -52,7 +52,7 @@ footer_content:
 course_vars:
   quarter: 'Fall 2026'
   building: 'COA 130'
-  building_map: 'https://maps.app.goo.gl/EBMotpwtm59M6zW38'
+  building_map: 'https://docs.google.com/document/d/1Ta0eN999tTOLpA8rXqW63IGfV8T8yMQqntu4KHDTj1w/edit?usp=sharing'
   timings: 'MWF 9:00-9:50am'
 
 # Callout styles (.important, .note, ...) used by _includes/notices.html and by

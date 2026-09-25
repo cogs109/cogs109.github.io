@@ -21,7 +21,7 @@ days:
 
 rhythm:
   - component: Lecture
-    note: 9–9:50am @ <a href="https://maps.app.goo.gl/EBMotpwtm59M6zW38" target="_blank" rel="noopener">COA 130 &#x2197;</a>
+    note: 9–9:50am @ <a href="https://docs.google.com/document/d/1Ta0eN999tTOLpA8rXqW63IGfV8T8yMQqntu4KHDTj1w/edit?usp=sharing" target="_blank" rel="noopener">COA 130 &#x2197;</a>
     cells:
       Monday:
         text: Lecture
