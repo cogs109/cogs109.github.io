@@ -31,19 +31,28 @@ seo:
 
 {% include notices.html %}
 
+<div class="two-col two-col-wide" markdown="1">
+<div markdown="1">
+
 ## Discussion Sections
 
 All sections meet on **Fridays @ <a href="https://maps.app.goo.gl/63CmTsb4SY2KBnh88" target="_blank" rel="noopener">RWAC 0103 &#x2197;</a>**.
 
-* **F, 3-3:50pm** — [Jiesen](mailto:jiz147@ucsd.edu) + [Natalia](mailto:navanni@ucsd.edu)
-* **F, 4-4:50pm** — [Zhicheng](mailto:zhh082@ucsd.edu) + [Jerry](mailto:juying@ucsd.edu)
-* **F, 5-5:50pm** — [Tanvi](mailto:tvidyala@ucsd.edu) + [Cissy](mailto:ciyao@ucsd.edu)
+* **F, 3-3:50pm** ([Jiesen](mailto:jiz147@ucsd.edu) + [Natalia](mailto:navanni@ucsd.edu))
+* **F, 4-4:50pm** ([Zhicheng](mailto:zhh082@ucsd.edu) + [Jerry](mailto:juying@ucsd.edu))
+* **F, 5-5:50pm** ([Tanvi](mailto:tvidyala@ucsd.edu) + [Cissy](mailto:ciyao@ucsd.edu))
+
+</div>
+<div markdown="1">
 
 ## Office Hours
 
 {% comment %} Office-hours grid, built from the rows tagged `group: hours` in _schedules/weekly.md {% endcomment %}
 
 {% include hours.html %}
+
+</div>
+</div>
 
 ## Course Calendar
 
