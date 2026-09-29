@@ -45,12 +45,15 @@
   mon:
     date: Sept 28
     lec: Lec 1
-    title: '<a href="https://drive.google.com/file/d/1WCyfMc13KXvn1z1LZ8SUHGimqgN4cxms/view?usp=drive_link" target="_blank" rel="noopener">What is statistical learning? Prediction vs. inference &#x2197;</a><span class="cal-link"><a href="https://docs.google.com/document/d/1g4j_xvJ0f5A_T_zM2qoIdGh-uzc-241MWuxnB6gQtTM/edit?tab=t.0" target="_blank" rel="noopener">Homework 1 released &#x2197;</a></span>'
+    title: '<a href="https://drive.google.com/file/d/1WCyfMc13KXvn1z1LZ8SUHGimqgN4cxms/view?usp=drive_link" target="_blank" rel="noopener">What is statistical learning? Prediction vs. inference &#x2197;</a>'
     due: 
       - name: Pre-course survey
         url: https://docs.google.com/forms/d/e/1FAIpQLSd-cEbyVAP_mPQEnLrdn-fcslL_hM7CghkWDU5k4O7VAmjjdg/viewform?usp=dialog
       - name: Syllabus quiz
         url: https://canvas.ucsd.edu/courses/78581/quizzes/269564
+    released:
+      - name: Homework 1
+        url: https://docs.google.com/document/d/1g4j_xvJ0f5A_T_zM2qoIdGh-uzc-241MWuxnB6gQtTM/edit?tab=t.0
   wed:
     date: Sept 30
     lec: Lec 2
