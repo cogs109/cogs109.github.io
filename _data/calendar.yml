@@ -76,6 +76,9 @@
     lec: Lec 4
     title: '<a href="https://drive.google.com/file/d/1HV0RjOWUMuuKdF5i5g1kqXNV0r3U8PR_/view?usp=drive_link" target="_blank" rel="noopener">Simple linear regression &#x2197;</a>'
     due: [Quiz 1, Homework 1]
+    released:
+      - name: Homework 2
+        url: https://docs.google.com/document/d/1bN4ExGc29p-eFBA3lfkiXagL18sDMRxrRzhD87QVXi4/edit?usp=sharing
   wed:
     date: Oct 7
     lec: Lec 5
