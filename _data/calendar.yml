@@ -105,11 +105,8 @@
     due:
       - Quiz 2
       - Homework 2
-      # To point an assignment at its own URL, swap the plain name for:
-      #   - name: Project groups survey
-      #     url: https://forms.gle/YOUR_FORM_ID
-      # A url must be complete; a bare https://forms.gle/ is a dead link.
-      - Project groups survey
+      - name: Group project survey
+        url: https://forms.gle/Yemqx2fNsJJuz9NW9
   wed:
     date: Oct 14
     lec: Lec 8
