@@ -87,6 +87,9 @@
     date: Oct 9
     lec: Lec 6
     title: '<a href="https://drive.google.com/file/d/1E3AlgqqnbFoVVD-oLH5In19GP-DuVc4d/view?usp=drive_link" target="_blank" rel="noopener">Qualitative variables in regression &#x2197;</a>'
+    released:
+      - name: Group project survey
+        url: https://forms.gle/Yemqx2fNsJJuz9NW9
     section: Week 2 review
 
 - week: 3
