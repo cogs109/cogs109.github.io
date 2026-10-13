@@ -15,7 +15,7 @@ description: Exam dates, format, and policies for COGS 109.
 {:toc}
 </details>
 
-There are 3 in-class exams spaced ~3 weeks apart; they are **non-cumulative, closed-note, and 50 minutes long**, with 20 multiple-choice questions (including select-all questions) and 2 free-response questions.
+There are 3 in-class exams spaced ~3 weeks apart; they are **non-cumulative, closed-note, and 50 minutes long**, with 18 multiple-choice questions (including select-all questions) and 2 free-response questions.
 
 * **Exam 1** — Monday, **Oct 19**
 * **Exam 2** — Monday, **Nov 9**
