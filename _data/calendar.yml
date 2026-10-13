@@ -107,6 +107,9 @@
       - Homework 2
       - name: Group project survey
         url: https://forms.gle/Yemqx2fNsJJuz9NW9
+    released:
+      - name: Homework 3
+        url: https://docs.google.com/document/d/1tA6wo2YLN3fPR46NzJqocOeQlZWACKVPmaQlDCmz8ZE/edit?usp=sharing
   wed:
     date: Oct 14
     lec: Lec 8
