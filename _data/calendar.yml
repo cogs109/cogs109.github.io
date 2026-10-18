@@ -161,7 +161,8 @@
     due:
       - Quiz 4
       - Homework 4
-      - Project Checkpoint 1*
+      - name: Project Checkpoint 1*
+        url: https://docs.google.com/document/d/1_XTt63Naja7KX1PgO1hTmec33bWs_3SHLDK0Y0sz3ps/edit?tab=t.gxmvwphy06dl
   wed:
     date: Oct 28
     lec: Lec 13
