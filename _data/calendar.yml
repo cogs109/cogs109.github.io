@@ -135,6 +135,9 @@
     date: Oct 19
     event: EXAM 1
     due: [Quiz 3, Homework 3]
+    released:
+      - name: Homework 4
+        url: https://docs.google.com/document/d/14XtN-lRT60nek1vek_fmd9FkSeuuFMI14ekQf5aTx3k/edit?usp=sharing
   wed:
     date: Oct 21
     lec: Lec 10
