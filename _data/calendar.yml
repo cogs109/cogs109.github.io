@@ -123,7 +123,7 @@
         url: https://drive.google.com/file/d/1YciknIs4NUkpNXL7tx50u_AEbPZOJJay/view?usp=drive_link
       - name: Exam 1 Study Sheet + Practice Exam
         url: https://docs.google.com/document/d/1W85FpKu0bKB877oxZjSUOR4HrYNeqf2XOh3rSr4bmE4/edit?usp=sharing
-    section: Week 3/Exam 1 review<br>Project group work
+    section: 'Week 3/Exam 1 review<br>Project group work<span class="cal-link"><a href="https://docs.google.com/presentation/d/1b7kCJDFFCoz9aZqsme2POEr1_h4Lo98J_1Z0cfLq--w/edit?usp=drive_link" target="_blank" rel="noopener">3pm slides &#x2197;</a></span><span class="cal-link"><a href="https://docs.google.com/presentation/d/1mL0_JDTOZtlGi_VB6_nYSVEgkj3onVjcK5rh9cJObf0/edit?usp=drive_link" target="_blank" rel="noopener">4pm slides &#x2197;</a></span><span class="cal-link"><a href="https://docs.google.com/presentation/d/12QHUWFz7bzrEnTqeHCxU5SEWr_GgdQMfQq1qt3SytuU/edit?usp=drive_link" target="_blank" rel="noopener">5pm slides &#x2197;</a></span>'
 
 - week: 4
   topic: |
@@ -147,7 +147,7 @@
     lec: Lec 11
     title: '<a href="https://drive.google.com/file/d/1C_Q46FabYC6ZzDVJksA3mqvtHiEgGtDk/view?usp=drive_link" target="_blank" rel="noopener">Multiple logistic regression &#x2197;</a>'
     note: Last day to drop without a "W"
-    section: Week 4 review<br>Project group work
+    section: 'Week 4 review<br>Project group work<span class="cal-link"><a href="https://docs.google.com/presentation/d/14jfLfbVtzVUYRJRcLLUrTd3oVbwvVSDFsSBeIGnga90/edit?usp=drive_link" target="_blank" rel="noopener">3pm slides &#x2197;</a></span><span class="cal-link"><a href="https://docs.google.com/presentation/d/1gc-TEzoAOaume3RyxzPWyh3lPsMHrn83-sx-bWijjXY/edit?usp=drive_link" target="_blank" rel="noopener">4pm slides &#x2197;</a></span><span class="cal-link"><a href="https://docs.google.com/presentation/d/1OY7UgrW3Pcb8LSKaICtA5AmAjG7SdeLCbgeXQ6z1WXM/edit?usp=drive_link" target="_blank" rel="noopener">5pm slides &#x2197;</a></span>'
 
 - week: 5
   topic: |
