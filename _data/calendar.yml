@@ -160,7 +160,7 @@
   mon:
     date: Oct 26
     lec: Lec 12
-    title: '<a href="https://drive.google.com/file/d/14DDWavdKRJ6x9W-RPBhRgktCKHxa7Hpb/view?usp=drive_link" target="_blank" rel="noopener">Multinomial logistic regression & classification neural networks &#x2197;</a>'
+    title: '<a href="https://drive.google.com/file/d/15KnxDgT4Fh48C5GbzHz-kd05SFqwMXNr/view?usp=drive_link" target="_blank" rel="noopener">Multinomial logistic regression & classification neural networks &#x2197;</a>'
     due:
       - Quiz 4
       - Homework 4
@@ -172,7 +172,7 @@
   wed:
     date: Oct 28
     lec: Lec 13
-    title: Cross-validation
+    title: '<a href="https://drive.google.com/file/d/1riA1ivsd-NhrhYY6r4cHLNtuXv4v0Lj9/view?usp=drive_link" target="_blank" rel="noopener">Cross-validation &#x2197;</a>'
   fri:
     date: Oct 30
     lec: Lec 14
