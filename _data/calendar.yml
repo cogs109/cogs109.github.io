@@ -191,6 +191,9 @@
     lec: Lec 15
     title: '<a href="https://drive.google.com/file/d/1AM_MulLVyYvjV3BbeFhf4fjIhpHwyasd/view?usp=drive_link" target="_blank" rel="noopener">Model selection &#x2197;</a>'
     due: [Quiz 5, Homework 5]
+    released:
+      - name: Homework 6
+        url: https://docs.google.com/document/d/1wXF73lQcTDYCJ0F34w3gxwjuZFFEZxeUV7W0MR-GyU4/edit?usp=sharing
   wed:
     date: Nov 4
     lec: Lec 16
