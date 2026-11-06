@@ -240,7 +240,8 @@
     lec: Lec 18
     title: Decision trees
     due:
-      - Project Checkpoint 2*
+      - name: Project Checkpoint 2*
+        url: https://docs.google.com/document/d/1_XTt63Naja7KX1PgO1hTmec33bWs_3SHLDK0Y0sz3ps/edit?tab=t.o72007odztz
   wed:
     date: Nov 18
     lec: Lec 19
