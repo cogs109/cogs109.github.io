@@ -238,7 +238,7 @@
   mon:
     date: Nov 16
     lec: Lec 18
-    title: Decision trees
+    title: '<a href="https://drive.google.com/file/d/1boUqvFZvQ9IPIjmj0rs_R5j7nVGqXQKw/view?usp=drive_link" target="_blank" rel="noopener">Decision trees &#x2197;</a>'
     due:
       - name: Project Checkpoint 2*
         url: https://docs.google.com/document/d/1_XTt63Naja7KX1PgO1hTmec33bWs_3SHLDK0Y0sz3ps/edit?tab=t.o72007odztz
@@ -249,7 +249,7 @@
   fri:
     date: Nov 20
     lec: Lec 20
-    title: Modern tree methods (XGBoost, LightGBM, CatBoost)
+    title: Modern tree methods (XGBoost, LightGBM)
     section: Week 8 review<br>Project group work
 
 - week: 9
