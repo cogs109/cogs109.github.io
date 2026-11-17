@@ -248,7 +248,12 @@
   wed:
     date: Nov 18
     lec: Lec 19
-    title: Bagging, random forests, boosting
+    title: '<a href="https://drive.google.com/file/d/10oS29-wRwklTnt53v0oyS6WsUdss938f/view?usp=drive_link" target="_blank" rel="noopener">Bagging, random forests, boosting &#x2197;</a>'
+    released:
+      - name: Project Checkpoint 3 Guidelines
+        url: https://docs.google.com/document/d/1_XTt63Naja7KX1PgO1hTmec33bWs_3SHLDK0Y0sz3ps/edit?tab=t.w3dj4tkzbne0
+      - name: Final Oral Exam Guidelines
+        url: https://docs.google.com/document/d/1_XTt63Naja7KX1PgO1hTmec33bWs_3SHLDK0Y0sz3ps/edit?tab=t.qyqbcpxk07kr
   fri:
     date: Nov 20
     lec: Lec 20
