@@ -96,7 +96,7 @@ rhythm:
         kind: hours
       Wednesday:
         text: Prof. Lai
-        note: 2–3:15pm 1-1s (<a href="https://calendar.app.google/AFfkzCq6sAxN44oe7" target="_blank" rel="noopener">booked</a>) @ <a href="https://maps.app.goo.gl/bF2MJgm9aCoEa3ak7" target="_blank" rel="noopener">CSB 244 &#x2197;</a><br>3:15–4:30pm open, walk-in @ <a href="https://docs.google.com/document/d/1Sr3AmWssSLXGfaJcQRzJXxQ1SHfFgLloogcglFF3_04/edit?usp=sharing" target="_blank" rel="noopener">CSB Courtyard &#x2197;</a>
+        note: 2–3:15pm 1-1s (<a href="https://calendar.app.google/AFfkzCq6sAxN44oe7" target="_blank" rel="noopener">booked</a>) @ <a href="https://maps.app.goo.gl/bF2MJgm9aCoEa3ak7" target="_blank" rel="noopener">CSB 244 &#x2197;</a><br>3:15–4:30pm open, walk-in (with Jiesen) @ <a href="https://docs.google.com/document/d/1Sr3AmWssSLXGfaJcQRzJXxQ1SHfFgLloogcglFF3_04/edit?usp=sharing" target="_blank" rel="noopener">CSB Courtyard &#x2197;</a>
         kind: hours
       Thursday:
         text: Cissy (PLA)
@@ -117,14 +117,6 @@ rhythm:
       Thursday:
         text: Natalia (PLA)
         note: 3pm on <a href="https://us04web.zoom.us/j/76172509149?pwd=wGaxLh4b0B5VwQOZjikw8N0bNWTlcH.1" target="_blank" rel="noopener">Zoom &#x2197;</a>
-        kind: hours
-
-  - component: ''
-    group: hours
-    cells:
-      Thursday:
-        text: Jiesen (TA)
-        note: 5–6pm @ <a href="https://maps.app.goo.gl/cMC7E2P4PCrc8D9L8" target="_blank" rel="noopener">HDSI 155 &#x2197;</a>
         kind: hours
 
   - component: Other

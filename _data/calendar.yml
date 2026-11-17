@@ -242,6 +242,9 @@
     due:
       - name: Project Checkpoint 2*
         url: https://docs.google.com/document/d/1_XTt63Naja7KX1PgO1hTmec33bWs_3SHLDK0Y0sz3ps/edit?tab=t.o72007odztz
+    released:
+      - name: Homework 7
+        url: https://docs.google.com/document/d/1jkr2zS2ON5DIzWDU8MkDi6PAGS3zsWLPBv2rDLbpVuQ/edit?usp=sharing
   wed:
     date: Nov 18
     lec: Lec 19
