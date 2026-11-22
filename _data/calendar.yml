@@ -300,7 +300,8 @@
     event: COURSE PROJECT EXPO
     title: "& course conclusion"
     due:
-      - "Project Checkpoint 3 (Final submission)*"
+      - name: "Project Checkpoint 3 (Final submission)*"
+        url: https://docs.google.com/document/d/1_XTt63Naja7KX1PgO1hTmec33bWs_3SHLDK0Y0sz3ps/edit?tab=t.w3dj4tkzbne0
     note: 'Dec 4–7 · <a href="https://docs.google.com/document/d/1_XTt63Naja7KX1PgO1hTmec33bWs_3SHLDK0Y0sz3ps/edit?tab=t.qyqbcpxk07kr" target="_blank" rel="noopener">Project oral exams &#x2197;</a>'
     section: No section
 
