@@ -269,7 +269,7 @@
   mon:
     date: Nov 23
     lec: Lec 21
-    title: Principal components analysis (PCA)
+    title: '<a href="https://drive.google.com/file/d/1weqXzwoEsTrVyiomZXXIwGKczxc5xb9N/view?usp=drive_link" target="_blank" rel="noopener">Principal components analysis (PCA) &#x2197;</a>'
     due: [Quiz 7, Homework 7]
     released:
       - name: Homework 8
