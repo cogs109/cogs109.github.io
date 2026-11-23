@@ -271,6 +271,9 @@
     lec: Lec 21
     title: Principal components analysis (PCA)
     due: [Quiz 7, Homework 7]
+    released:
+      - name: Homework 8
+        url: https://docs.google.com/document/d/1toHv0VEfw4PB_-ZHQDwBm8-Jz8ZihiV85Dq-6HcA-1A/edit?usp=sharing
   wed:
     date: Nov 25
     lec: Lec 22
