@@ -277,7 +277,10 @@
   wed:
     date: Nov 25
     lec: Lec 22
-    title: PCA (cont'd)
+    title: '<a href="https://drive.google.com/file/d/18BbCMIbasJQ4K0MFsfy1a-9hc88a3Cdp/view?usp=drive_link" target="_blank" rel="noopener">PCA (cont''d) &#x2197;</a>'
+    released:
+      - name: Webclickers Week 8-9
+        url: https://drive.google.com/file/d/1WiU3liI1gSvRW2NfqJXeMt7F19-CPoPt/view?usp=sharing
   fri:
     date: Nov 27
     event: NO CLASS
